@@ -103,6 +103,6 @@ body {
 }
 
 .search.active .btn {
-  color: #fff;
+  color: grey;
   transform: translateX(198px);
 }
