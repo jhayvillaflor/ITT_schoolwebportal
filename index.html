@@ -11,13 +11,20 @@
     <!-- homemade css-->
     <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
     <!-- Font-awesome -->
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
+    <!-- Animate On Scroll Library CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- jquey CDN -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
@@ -36,295 +43,475 @@
   </head>
   <body>
     <!-- homemade nav bar -->
-    <nav class="nav">
-      <div class="container">
-        <h1 class="logo">
-          <a href="/index.html"
-            ><img src="img/logo.png" width="100px" alt="asd"
-          /></a>
-        </h1>
-        <ul>
-          <li><a href="#" class="current">Home</a></li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <div class="search">
-              <input type="text" class="input" placeholder="    Search..." />
-              <button class="btn" title="Search">
-                <i class="fas fa-search"></i>
-              </button>
+    <nav class="navbar navbar-expand-lg bg-lightblue ps-5">
+      <div class="container-fluid">
+        <a href="#"
+          ><img src="img/logo.png" width="80px" alt="school logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end me-5"
+          id="navbarNavDropdown"
+        >
+          <div class="row">
+            <div class="col">
+              <ul class="navbar-nav justify-content-end">
+                <li>
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    ABOUT US
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >The School's Way Of Life</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Careers</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Directory</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOGS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-key"></i> LOGIN</a
+                  >
+                </li>
+              </ul>
+              <div class="row">
+                <div class="col">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ACADEMICS
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        STUDENT RESOURCE AND SERVICES
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Resources
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </nav>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem
-    voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum
-    iste soluta eaque perferendis nihil recusandae dolore officia aperiam
-    corporis similique. Facilis quos tempore labore totam! Consectetur molestiae
-    iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio
-    eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-    dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-    in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-    aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-    molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem sit
-    architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-    voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab eligendi
-    omnis delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-    repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-    Illum velit delectus dicta et iste dolorum obcaecati minus odio eligendi!
+    <!-- INSERT BODY HERE -->
+    <!-- INSERT BODY HERE -->
+    <p class="p-5">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem
+      voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo in
+      ipsum iste soluta eaque perferendis nihil recusandae dolore officia
+      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
+      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
+      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
+      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
+      eligendi omnis delectus earum labore, placeat officiis sint illum rem
+      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
+      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
+      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
+      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
+      dolore officia aperiam corporis similique. Facilis quos tempore labore
+      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
+      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
+      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
+      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
+      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
+      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
+      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
+      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
+      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
+      labore totam! Consectetur molestiae iusto ducimus error reiciendis
+      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
+      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
+      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
+      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
+      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
+      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
+      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
+      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
+      perferendis nihil recusandae dolore officia aperiam corporis similique.
+      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
+      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
+      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
+      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
+      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
+      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
+      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
+      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
+      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
+      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
+      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
+      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
+      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
+      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
+      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
+      Illum velit delectus dicta et iste dolorum obcaecati minus odio
+      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
+      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
+      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
+      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
+      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
+      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
+      eligendi omnis delectus earum labore, placeat officiis sint illum rem
+      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
+      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
+      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
+      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
+      dolore officia aperiam corporis similique. Facilis quos tempore labore
+      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
+      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
+      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
+      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
+      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
+      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
+      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
+      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
+      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
+      labore totam! Consectetur molestiae iusto ducimus error reiciendis
+      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
+      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
+      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
+      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
+      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
+      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
+      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
+      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
+      perferendis nihil recusandae dolore officia aperiam corporis similique.
+      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
+      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
+      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
+      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
+      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
+      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
+      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
+      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
+      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
+      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
+      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
+      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
+      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
+      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
+      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
+      Illum velit delectus dicta et iste dolorum obcaecati minus odio
+      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
+      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
+      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
+      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
+      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
+      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
+      eligendi omnis delectus earum labore, placeat officiis sint illum rem
+      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
+      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
+      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
+      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
+      dolore officia aperiam corporis similique. Facilis quos tempore labore
+      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
+      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
+      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
+      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
+      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
+      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
+      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
+      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
+      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
+      labore totam! Consectetur molestiae iusto ducimus error reiciendis
+      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
+      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
+      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
+      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
+      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
+      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
+      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
+      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
+      perferendis nihil recusandae dolore officia aperiam corporis similique.
+      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
+      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
+      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
+      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
+      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
+      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
+      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
+      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
+      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
+      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
+      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
+      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
+      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
+      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
+      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
+      Illum velit delectus dicta et iste dolorum obcaecati minus odio
+      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
+      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
+      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
+      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
+      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
+      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
+      eligendi omnis delectus earum labore, placeat officiis sint illum rem
+      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
+      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
+      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
+      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
+      dolore officia aperiam corporis similique. Facilis quos tempore labore
+      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
+      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
+      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
+      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
+      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
+      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
+      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
+      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
+      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
+      labore totam! Consectetur molestiae iusto ducimus error reiciendis
+      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
+      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
+      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
+      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
+      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
+      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
+      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
+      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
+      perferendis nihil recusandae dolore officia aperiam corporis similique.
+      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
+      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
+      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
+      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
+      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
+      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
+      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
+      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
+      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
+      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
+      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
+      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
+      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
+      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
+      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
+      Illum velit delectus dicta et iste dolorum obcaecati minus odio
+      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
+      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
+      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
+      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
+      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
+      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
+      eligendi omnis delectus earum labore, placeat officiis sint illum rem
+      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
+      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
+      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
+      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
+      dolore officia aperiam corporis similique. Facilis quos tempore labore
+      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
+      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
+      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
+      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
+      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
+      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
+      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
+      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
+      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
+      labore totam! Consectetur molestiae iusto ducimus error reiciendis
+      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
+      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
+      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
+      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
+      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
+      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
+      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
+      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
+      perferendis nihil recusandae dolore officia aperiam corporis similique.
+      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
+      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
+      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
+      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
+      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
+      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
+      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
+      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
+      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
+      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
+      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
+      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
+      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
+      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
+      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
+      Illum velit delectus dicta et iste dolorum obcaecati minus odio
+      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
+      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
+      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
+      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
+      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
+      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
+      eligendi omnis delectus earum labore, placeat officiis sint illum rem
+      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
+      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
+      minus odio eligendi!
+    </p>
     <!-- INSERT BODY HERE -->
     <!-- INSERT BODY HERE -->
     <!-- INSERT BODY HERE -->
     <!-- INSERT BODY HERE -->
+    <footer class="bg-darkblue pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <img
+              src="img/logo.png"
+              width="200px"
+              alt="school logo"
+              class="mb-3 img-fluid"
+            />
+            <h4 class="text-center">JoyLand School</h4>
+            <p class="text-center">
+              “Whether you're a current student, parent, or prospective
+              applicant, we hope you find our website informative and engaging.”
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <p>Home</p>
+            <p>About US</p>
+            <p>Contact Us&nbsp;</p>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Student Resources and Services</h5>
+                <p></p>
+                <p>Club Organization</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h5>Academics</h5>
+            <p>Curriculum</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Resources</h5>
+                <p>Library</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h5>Newsletter</h5>
+            <p>secret</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Follow Us on Social Media</h5>
+                <p>Where to reach us?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center bg-lightblue mt-5">
+        Copyright information: © 2023 [Your Company Name]. All rights reserved.
+      </div>
+    </footer>
     <!-- homemade js -->
     <script src="JS/script.js"></script>
     <!-- bootstrap CDN script-->
