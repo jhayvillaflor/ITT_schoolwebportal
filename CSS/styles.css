@@ -28,6 +28,16 @@ a:active {
 .bg-darkblue {
   background-color: #081027;
 }
+.footerbox {
+  background-color: #2d51b6;
+  border-radius: 2px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px #abc0ff;
+  width: 320px;
+}
+.black {
+  color: black;
+}
 
 i {
   color: #54ffff;
@@ -40,4 +50,50 @@ h5 {
 
 footer {
   color: #dadada;
+}
+
+.form-control {
+  position: relative;
+  margin-top: 15px;
+}
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  color: black;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+}
+.form-control label {
+  position: absolute;
+  top: 2 px;
+  left: 10px;
+}
+
+.form-control label span {
+  display: inline-block;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-35px);
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  border: 0;
+  border-radius: 3px;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(1.036);
 }
