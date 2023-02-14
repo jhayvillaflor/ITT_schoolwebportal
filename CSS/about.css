@@ -147,9 +147,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 15em;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10em;
 }
 .footer-cont .upper-cont {
   width: 100%;
@@ -409,4 +409,18 @@ body {
           align-items: center;
   color: #ffffff;
   background-color: #21305b;
+}
+
+@media screen and (max-width: 500px) {
+  .navigation-cont {
+    display: none;
+  }
+  .footer-cont {
+    display: none;
+  }
+}
+@media screen and (min-width: 499px) {
+  .flex {
+    display: none;
+  }
 }

@@ -118,6 +118,7 @@ body {
   }
 }
 // for footer section
+
 .footer-cont {
   background-color: #081027;
   width: 100vw;
@@ -129,9 +130,9 @@ body {
   margin-top: 15em;
   //   child
   .upper-cont {
-    width: 1680px;
-    height: 450px;
-    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -332,7 +333,15 @@ body {
     background-color: #21305b;
   }
 }
-
+// responsivenes
+@media only screen and (max-width: 500px) {
+  .footer-cont {
+    display: none;
+  }
+  .navigation-cont {
+    display: none;
+  }
+}
 // home contents
 // content 1
 .home-content-1 {
