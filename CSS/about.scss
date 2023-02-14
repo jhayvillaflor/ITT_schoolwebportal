@@ -23,6 +23,7 @@ $conentFontsizes: (
 }
 
 // styles start here
+
 * {
   margin: 0;
   padding: 0;
@@ -36,13 +37,16 @@ body {
 }
 
 // for navigation bar
+
 .navigation-cont {
-  width: 100vw;
   height: 170px;
   padding: 0 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .icon {
+    display: none;
+  }
   //   child
   .left-section {
     width: 175px;
@@ -54,7 +58,8 @@ body {
     font-weight: bold;
     // child
     img {
-      width: 100%;
+      width: 14rem;
+      padding-right: 50px;
     }
   }
   .right-section-navlinks {
@@ -65,6 +70,7 @@ body {
     align-items: end;
     justify-content: space-between;
     // child
+
     .upper-nav {
       width: 80%;
       height: 35px;
@@ -105,6 +111,7 @@ body {
       justify-content: space-between;
       align-items: center;
       //   child
+
       a {
         text-decoration: none;
         text-transform: uppercase;
@@ -126,12 +133,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15em;
+  margin-top: 10em;
   //   child
   .upper-cont {
-    width: 1680px;
-    height: 450px;
-    margin-top: 40px;
+    width: 100%;
+
+    padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -330,5 +337,19 @@ body {
     align-items: center;
     color: #ffffff;
     background-color: #21305b;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation-cont {
+    display: none;
+  }
+  .footer-cont {
+    display: none;
+  }
+}
+@media screen and (min-width: 499px) {
+  .flex {
+    display: none;
   }
 }
