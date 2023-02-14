@@ -7,7 +7,13 @@
     <title>Joyland School Web Portal</title>
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="img/logo.png" />
-
+    <!-- bootstrap CDN css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <!-- homemade css-->
     <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
     <!-- Font-awesome -->
@@ -21,6 +27,166 @@
     />
     <!-- Animate On Scroll Library CDN-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navigation-cont">
+      <div class="left-section">
+        <img src="img/logo.png" alt="The logo of the page" />
+      </div>
+      <div class="right-section-navlinks">
+        <div class="upper-nav">
+          <a class="home" href="#">home</a>
+          <a class="about-us" href="#">about-us</a>
+          <a class="blogs" href="#">blogs</a>
+          <button id="loginBtn">
+            <!-- svgToggle -->
+            <svg
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.12034 2.78315C8.94813 1.82061 9.98397 1.13592 11.1185 0.801381C12.2531 0.466843 13.4442 0.494868 14.5662 0.882496C15.6882 1.27012 16.6994 2.00297 17.4931 3.00367C18.2867 4.00436 18.8334 5.23577 19.0753 6.56788C19.3172 7.89999 19.2454 9.28337 18.8675 10.572C18.4896 11.8606 17.8197 13.0066 16.9283 13.889C16.037 14.7713 14.9573 15.3574 13.8034 15.5853C12.6495 15.8131 11.4641 15.6743 10.3723 15.1834L10.1033 15.0555L10.0833 15.0508H9.47334V16.8864C9.47349 17.2464 9.35883 17.5937 9.15157 17.861C8.94431 18.1283 8.65917 18.2967 8.35134 18.3335L8.22334 18.3405H6.64534V20.1761C6.64549 20.5361 6.53083 20.8833 6.32357 21.1507C6.11631 21.418 5.83118 21.5864 5.52334 21.6232L5.39534 21.6302H1.41234C1.16352 21.6302 0.923452 21.5234 0.738173 21.3302C0.552893 21.137 0.435443 20.871 0.408344 20.5833L0.402344 20.4553V17.4192C0.402344 17.0158 0.522491 16.6249 0.742344 16.313L0.842344 16.185L6.34234 9.78594L6.35234 9.7429C6.35543 9.71145 6.35408 9.67962 6.34834 9.64868C6.13193 8.42311 6.18055 7.15421 6.48984 5.95589C6.79912 4.75758 7.35939 3.66737 8.12034 2.78315ZM12.3623 6.07284C12.2231 6.23491 12.1126 6.42732 12.0373 6.63905C11.9619 6.85079 11.9232 7.07772 11.9232 7.30688C11.9233 7.53604 11.9621 7.76294 12.0375 7.97464C12.113 8.18634 12.2235 8.37868 12.3628 8.54068C12.5022 8.70268 12.6676 8.83117 12.8496 8.91882C13.0316 9.00647 13.2267 9.05155 13.4237 9.0515C13.6207 9.05144 13.8158 9.00625 13.9977 8.91851C14.1797 8.83076 14.3451 8.70218 14.4843 8.5401C14.7575 8.21086 14.9085 7.77001 14.9049 7.31251C14.9013 6.85501 14.7433 6.41746 14.4651 6.09409C14.1868 5.77073 13.8105 5.58743 13.4172 5.58367C13.024 5.57991 12.6451 5.75483 12.3623 6.07284Z"
+                fill="#293864"
+              />
+            </svg>
+
+            login
+          </button>
+        </div>
+        <div class="lower-nav">
+          <a href="#">ACADEMICS</a>
+          <a href="#">Extracurricular Activities</a>
+          <a href="#">resources</a>
+        </div>
+      </div>
+    </header>
+    <!-- Content of Home page -->
+    <section class="home-content-1">
+      <div class="left-section">
+        <div class="upper-part">
+          <p class="tagline">Welcome to [School Name]!</p>
+          <p class="hero">Where learning is an adventure</p>
+          <p class="description">
+            At [School Name], we believe that every child has the potential to
+            achieve great things. That's why we provide a supportive and
+            engaging environment where students can learn, grow, and explore the
+            world around them. With our experienced and dedicated faculty,
+            modern facilities, and comprehensive academic programs, we're
+            committed to helping every student reach their full potential.
+          </p>
+        </div>
+        <button id="readMoreBtn">Read more</button>
+      </div>
+      <div class="right-section">
+        <!-- svgToggle -->
+      </div>
+    </section>
+    <!-- <section class="home-content-2">
+      <div class="left-section"></div>
+      <div class="right-section"></div>
+      <div></div>
+    </section> -->
+    <!-- Footer -->
+    <section class="footer-cont">
+      <div class="upper-cont">
+        <div class="left-section">
+          <img src="img/logo.png" alt="The logo of the page" />
+          <p class="schoolName">[SCHOOL NAME]</p>
+          <p class="quote">
+            “Whether you're a current student, parent, or prospective applicant,
+            we hope you find our website informative and engaging.”
+          </p>
+        </div>
+        <div class="middle-section-1">
+          <div class="upper-link">
+            <p class="header-link">Quick Links</p>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="lower-link">
+            <p class="header-link">Extracurricular Activites</p>
+            <a href="#">Clubs and Organizations</a>
+            <a href="#">Athletics</a>
+            <a href="#">Fine Arts</a>
+            <a href="#">Community Service</a>
+          </div>
+        </div>
+        <div class="middle-section-2">
+          <div class="upper-link">
+            <p class="header-link">Academics</p>
+            <a href="#">Curriculum</a>
+            <a href="#">Departments</a>
+            <a href="#">Course Catalog</a>
+          </div>
+          <div class="lower-link">
+            <p class="header-link">Resources</p>
+            <a href="#">Library</a>
+            <a href="#">Technology</a>
+            <a href="#">Counseling</a>
+            <a href="#">Health Services</a>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="upperPart">
+            <p class="header-link">Newsletter</p>
+            <div class="newsletterForm">
+              <p class="form-heading">
+                Stay up to date with the latest news and events from our school!
+                Subscribe to our newsletter
+              </p>
+              <div class="form-lower">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <button id="emailSubscribe">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="middlePart">
+            <p class="header-link">Follow us on social media</p>
+            <div class="icon-links">
+              <a href="#"><img src="img/youtube.svg" alt="Youtube Icon" /></a>
+              <a href="#"><img src="img/facebook.svg" alt="Facebook Icon" /></a>
+              <a href="#"><img src="img/linkedin.svg" alt="LinkedIn Icon" /></a>
+              <a href="#"
+                ><img src="img/instagram.svg" alt="Instagram Icon"
+              /></a>
+              <a href="#"><img src="img/twitter.svg" alt="Twitter Icon" /></a>
+            </div>
+          </div>
+          <div class="lower-part">
+            <p class="header-link">Where to reach us?</p>
+            <div style="margin-top: 13px">
+              <p class="location-link links">
+                <img src="img/location.svg" alt="Location Icon" />
+                <span>123 Main St., Anytown, USA 12345</span>
+              </p>
+              <p class="phone-link links">
+                <img src="img/telephone.svg" alt="Telephone Icon" />
+                <span>+63 934-887-9902</span>
+              </p>
+              <p class="email-link links">
+                <img src="img/email.svg" alt="Email Icon" />
+                <span>joylandschool.inc@edu.com.ph</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-cont">
+        Copyright information: © 2023 JoylandSchool. All rights reserved.
+      </div>
+    </section>
+
+    <!-- PUT ALL THE JS HERE AND SCRIPT -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -32,524 +198,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <!-- bootstrap CDN css-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- homemade nav bar -->
-    <nav class="navbar navbar-expand-lg bg-lightblue ps-5">
-      <div class="container-fluid">
-        <a href="#"
-          ><img src="img/logo.png" width="80px" alt="school logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end me-5"
-          id="navbarNavDropdown"
-        >
-          <div class="row">
-            <div class="col">
-              <ul class="navbar-nav justify-content-end">
-                <li>
-                  <a class="nav-link active" href="#">Home</a>
-                </li>
-
-                <li class="dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                  >
-                    ABOUT US
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a class="dropdown-item" href="#"
-                        >The School's Way Of Life</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Careers</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Directory</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">BLOGS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><i class="fa-solid fa-key"></i> LOGIN</a
-                  >
-                </li>
-              </ul>
-              <div class="row">
-                <div class="col">
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        ACADEMICS
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        STUDENT RESOURCE AND SERVICES
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Resources
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- INSERT BODY HERE -->
-    <!-- INSERT BODY HERE -->
-    <p class="p-5">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem
-      voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo in
-      ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
-      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
-      eligendi omnis delectus earum labore, placeat officiis sint illum rem
-      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
-      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
-      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
-      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
-      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
-      dolore officia aperiam corporis similique. Facilis quos tempore labore
-      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
-      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
-      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
-      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
-      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
-      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
-      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
-      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
-      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
-      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
-      labore totam! Consectetur molestiae iusto ducimus error reiciendis
-      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
-      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
-      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
-      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
-      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
-      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
-      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
-      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
-      perferendis nihil recusandae dolore officia aperiam corporis similique.
-      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
-      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
-      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
-      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
-      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
-      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
-      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
-      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
-      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
-      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
-      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
-      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
-      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
-      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
-      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-      Illum velit delectus dicta et iste dolorum obcaecati minus odio
-      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
-      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
-      eligendi omnis delectus earum labore, placeat officiis sint illum rem
-      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
-      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
-      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
-      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
-      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
-      dolore officia aperiam corporis similique. Facilis quos tempore labore
-      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
-      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
-      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
-      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
-      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
-      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
-      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
-      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
-      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
-      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
-      labore totam! Consectetur molestiae iusto ducimus error reiciendis
-      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
-      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
-      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
-      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
-      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
-      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
-      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
-      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
-      perferendis nihil recusandae dolore officia aperiam corporis similique.
-      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
-      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
-      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
-      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
-      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
-      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
-      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
-      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
-      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
-      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
-      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
-      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
-      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
-      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
-      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-      Illum velit delectus dicta et iste dolorum obcaecati minus odio
-      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
-      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
-      eligendi omnis delectus earum labore, placeat officiis sint illum rem
-      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
-      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
-      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
-      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
-      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
-      dolore officia aperiam corporis similique. Facilis quos tempore labore
-      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
-      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
-      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
-      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
-      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
-      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
-      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
-      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
-      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
-      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
-      labore totam! Consectetur molestiae iusto ducimus error reiciendis
-      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
-      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
-      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
-      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
-      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
-      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
-      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
-      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
-      perferendis nihil recusandae dolore officia aperiam corporis similique.
-      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
-      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
-      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
-      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
-      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
-      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
-      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
-      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
-      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
-      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
-      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
-      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
-      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
-      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
-      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-      Illum velit delectus dicta et iste dolorum obcaecati minus odio
-      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
-      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
-      eligendi omnis delectus earum labore, placeat officiis sint illum rem
-      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
-      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
-      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
-      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
-      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
-      dolore officia aperiam corporis similique. Facilis quos tempore labore
-      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
-      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
-      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
-      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
-      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
-      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
-      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
-      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
-      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
-      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
-      labore totam! Consectetur molestiae iusto ducimus error reiciendis
-      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
-      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
-      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
-      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
-      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
-      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
-      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
-      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
-      perferendis nihil recusandae dolore officia aperiam corporis similique.
-      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
-      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
-      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
-      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
-      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
-      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
-      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
-      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
-      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
-      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
-      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
-      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
-      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
-      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
-      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-      Illum velit delectus dicta et iste dolorum obcaecati minus odio
-      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
-      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
-      eligendi omnis delectus earum labore, placeat officiis sint illum rem
-      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
-      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
-      minus odio eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing
-      elit. Ratione dolorem voluptates eveniet tempora ut cupiditate magnam,
-      sapiente, hic quo in ipsum iste soluta eaque perferendis nihil recusandae
-      dolore officia aperiam corporis similique. Facilis quos tempore labore
-      totam! Consectetur molestiae iusto ducimus error reiciendis aspernatur
-      dolor, modi dolorem sit architecto, voluptate magni sunt unde est quas?
-      Voluptates a dolorum voluptatum quo perferendis aut sit. Aspernatur libero
-      laboriosam ab eligendi omnis delectus earum labore, placeat officiis sint
-      illum rem voluptas ipsum repellendus iste eius recusandae quae excepturi
-      facere, iure rerum sequi? Illum velit delectus dicta et iste dolorum
-      obcaecati minus odio eligendi!Lorem, ipsum dolor sit amet consectetur
-      adipisicing elit. Ratione dolorem voluptates eveniet tempora ut cupiditate
-      magnam, sapiente, hic quo in ipsum iste soluta eaque perferendis nihil
-      recusandae dolore officia aperiam corporis similique. Facilis quos tempore
-      labore totam! Consectetur molestiae iusto ducimus error reiciendis
-      aspernatur dolor, modi dolorem sit architecto, voluptate magni sunt unde
-      est quas? Voluptates a dolorum voluptatum quo perferendis aut sit.
-      Aspernatur libero laboriosam ab eligendi omnis delectus earum labore,
-      placeat officiis sint illum rem voluptas ipsum repellendus iste eius
-      recusandae quae excepturi facere, iure rerum sequi? Illum velit delectus
-      dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum dolor sit
-      amet consectetur adipisicing elit. Ratione dolorem voluptates eveniet
-      tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste soluta eaque
-      perferendis nihil recusandae dolore officia aperiam corporis similique.
-      Facilis quos tempore labore totam! Consectetur molestiae iusto ducimus
-      error reiciendis aspernatur dolor, modi dolorem sit architecto, voluptate
-      magni sunt unde est quas? Voluptates a dolorum voluptatum quo perferendis
-      aut sit. Aspernatur libero laboriosam ab eligendi omnis delectus earum
-      labore, placeat officiis sint illum rem voluptas ipsum repellendus iste
-      eius recusandae quae excepturi facere, iure rerum sequi? Illum velit
-      delectus dicta et iste dolorum obcaecati minus odio eligendi!Lorem, ipsum
-      dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptates
-      eveniet tempora ut cupiditate magnam, sapiente, hic quo in ipsum iste
-      soluta eaque perferendis nihil recusandae dolore officia aperiam corporis
-      similique. Facilis quos tempore labore totam! Consectetur molestiae iusto
-      ducimus error reiciendis aspernatur dolor, modi dolorem sit architecto,
-      voluptate magni sunt unde est quas? Voluptates a dolorum voluptatum quo
-      perferendis aut sit. Aspernatur libero laboriosam ab eligendi omnis
-      delectus earum labore, placeat officiis sint illum rem voluptas ipsum
-      repellendus iste eius recusandae quae excepturi facere, iure rerum sequi?
-      Illum velit delectus dicta et iste dolorum obcaecati minus odio
-      eligendi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
-      dolorem voluptates eveniet tempora ut cupiditate magnam, sapiente, hic quo
-      in ipsum iste soluta eaque perferendis nihil recusandae dolore officia
-      aperiam corporis similique. Facilis quos tempore labore totam! Consectetur
-      molestiae iusto ducimus error reiciendis aspernatur dolor, modi dolorem
-      sit architecto, voluptate magni sunt unde est quas? Voluptates a dolorum
-      voluptatum quo perferendis aut sit. Aspernatur libero laboriosam ab
-      eligendi omnis delectus earum labore, placeat officiis sint illum rem
-      voluptas ipsum repellendus iste eius recusandae quae excepturi facere,
-      iure rerum sequi? Illum velit delectus dicta et iste dolorum obcaecati
-      minus odio eligendi!
-    </p>
-    <!-- INSERT BODY HERE -->
-    <!-- INSERT BODY HERE -->
-    <!-- INSERT BODY HERE -->
-    <!-- INSERT BODY HERE -->
-    <footer class="bg-darkblue pt-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <img
-              src="img/logo.png"
-              width="200px"
-              alt="school logo"
-              class="mb-3 img-fluid"
-            />
-            <h4 class="text-center">Joyland School</h4>
-            <p class="text-center">
-              “Whether you're a current student, parent, or prospective
-              applicant, we hope you find our website informative and engaging.”
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5>Quick Links</h5>
-            <p>Home</p>
-            <p>About US</p>
-            <p>Contact Us&nbsp;</p>
-            <div class="row">
-              <div class="col-md-12">
-                <h5>Student Resources and Services</h5>
-                <p></p>
-                <p>Club Organization</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <h5>Academics</h5>
-            <p>Curriculum</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <div class="row">
-              <div class="col-md-12">
-                <h5>Resources</h5>
-                <p>Library</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <h5>Newsletter</h5>
-            <div class="footerbox">
-              <p>
-                Stay up to date with the latest news and events from our school!
-                Subscribe to our newsletter
-              </p>
-              <div class="d-flex">
-                <div class="form-control" style="width: 177px; height: 40px">
-                  <input type="text" required />
-                  <label> Email</label>
-                </div>
-                <div class="col">
-                  <p class="small">
-                    <button class="btn">Subscribe</button>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 pt-4">
-                <h5>Follow Us on Social Media</h5>
-                <a href="#"><img src="img/facebook.svg" class="pe-1" /></a>
-                <a href="#"><img src="img/instagram.svg" class="p-1" /></a>
-                <a href="#"><img src="img/twitter.svg" class="p-1" /></a>
-                <a href="#"><img src="img/youtube.svg" class="p-1" /></a>
-                <a href="#"><img src="img/linkedin.svg" class="p-1" /></a>
-                <h5 class="pt-3">Where to reach us?</h5>
-                <div class="d-flex">
-                  <img src="img/location.svg" class="p-1" width="28px" />
-                  <div class="col">
-                    <p class="small pt-3">
-                      94 Sison St, Poblacion, San Fabian, Pangasinan,
-                      Philippines
-                    </p>
-                  </div>
-                </div>
-
-                <p class="small">
-                  <img src="img/telephone.svg" class="p-1" width="28px" />
-                  09922152230/09487170270
-                </p>
-                <p class="small">
-                  <img src="img/email.svg" class="p-1" width="28px" />
-                  joylandschool.inc@edu.com.ph
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid text-center bg-lightblue mt-5">
-        Copyright information: © 2023 Joyland School Inc. All rights reserved.
-      </div>
-    </footer>
-    <!-- homemade js -->
     <script src="JS/script.js"></script>
     <!-- bootstrap CDN script-->
     <script
