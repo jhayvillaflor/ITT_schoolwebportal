@@ -28,6 +28,7 @@ $conentFontsizes: (
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 body {
   background-color: #293864;
@@ -639,6 +640,7 @@ body {
   height: 660px;
   margin-top: 15em;
   position: relative;
+  flex-direction: column;
   // children
   .top-bg {
     background-color: #28355d;
@@ -776,5 +778,314 @@ body {
         padding-right: 10px;
       }
     }
+  }
+}
+// home mobile view
+.nav-mobile {
+  background-color: testBgColor(color1);
+  height: 45px;
+  width: 100%;
+}
+.mobile-home-footer {
+  background-color: #081027;
+  width: 100vw;
+  height: 1600px;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  // child
+  .upperPart {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 10px;
+    // child
+    img {
+      width: 90px;
+      height: 90px;
+    }
+    .header {
+      font-size: fontSizes(navFontSize);
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .tagline {
+      font-size: fontSizes(descriptionFontSize);
+      color: #ffffff;
+    }
+  }
+  .quick-links-mobile {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    // child
+    p {
+      font-size: 16px;
+      color: #abc0ff;
+      font-weight: bold;
+    }
+    .lower-part-link {
+      width: 100%;
+      height: 75px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      // child
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #dadada;
+      }
+    }
+  }
+  .academic {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    // child
+    p {
+      font-size: 16px;
+      color: #abc0ff;
+      font-weight: bold;
+    }
+    .lower-part-link {
+      width: 100%;
+      height: 75px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      // child
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #dadada;
+      }
+    }
+  }
+  .extracurricularActivities {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    // child
+    p {
+      font-size: 16px;
+      color: #abc0ff;
+      font-weight: bold;
+    }
+    .lower-part-link {
+      width: 100%;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      // child
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #dadada;
+      }
+    }
+  }
+  .resources {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    // child
+    p {
+      font-size: 16px;
+      color: #abc0ff;
+      font-weight: bold;
+    }
+    .lower-part-link {
+      width: 100%;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      // child
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #dadada;
+      }
+    }
+  }
+  .newsletter-mobile {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    // child
+    .newsletter-header {
+      font-size: fontSizes(descriptionFontSize);
+      color: #abc0ff;
+      font-weight: bold;
+    }
+    .newsletterForm {
+      background-color: #142659;
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      // child
+      .form-header {
+        color: #ffffff;
+      }
+      #emailNewsletterMobile {
+        border: none;
+        border-bottom: 1px solid #2d51b6;
+        text-align: center;
+        background-color: #142659;
+        height: 35px;
+        width: 100%;
+      }
+      #emailNewsletterMobile:focus {
+        outline: none;
+      }
+      #subscribeBtnMobile {
+        margin-top: 13px;
+        border: none;
+        width: 60%;
+        height: 35px;
+        border-radius: 8px;
+        background-color: #233d87;
+        color: #ffffff;
+      }
+    }
+  }
+  .socialMedialinksMobile {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // child
+    .socialHeader {
+      font-size: 16px;
+      font-weight: bold;
+      color: #abc0ff;
+    }
+    .footer-links {
+      width: 60%;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      // child
+      a {
+        text-decoration: none;
+        width: 25px;
+        height: 25px;
+
+        // child
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .wrtuMobile {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // child
+    .wrtuHeader {
+      font-weight: bold;
+      color: #abc0ff;
+    }
+    .wrtuCont {
+      width: 100%;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // child
+      .wrtuLinks {
+        width: 250px;
+        height: 110px;
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          "locationIcon locationLink"
+          "telephoneIcon numberLink"
+          "emailIcon emailLink";
+        // child
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 12px;
+          color: #c4c4c4;
+        }
+        .location-icon {
+          grid-area: locationIcon;
+        }
+        .telephone-icon {
+          grid-area: telephoneIcon;
+        }
+        .email-icon {
+          grid-area: emailIcon;
+        }
+        .location {
+          grid-area: locationLink;
+        }
+        .number {
+          grid-area: numberLink;
+        }
+        .emailwtru {
+          grid-area: emailLink;
+        }
+      }
+    }
+  }
+  .lower-part {
+    background-color: #21305b;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: #ffffff;
   }
 }

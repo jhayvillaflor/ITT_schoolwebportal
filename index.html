@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header class="navigation-cont">
+    <header class="navigation-cont d-none d-sm-flex">
       <div class="left-section">
         <img src="img/logo.png" alt="The logo of the page" />
       </div>
@@ -66,7 +66,7 @@
     </header>
     <!-- Content of Home page -->
     <!-- content 1 -->
-    <section class="home-content-1">
+    <section class="home-content-1 d-none d-sm-flex">
       <div class="left-section">
         <div class="upper-part">
           <p class="tagline">Welcome to Joyland Tech School!</p>
@@ -88,7 +88,7 @@
       </div>
     </section>
     <!-- content 2 -->
-    <section class="home-content-2">
+    <section class="home-content-2 d-none d-sm-flex">
       <div class="left-section"></div>
       <div class="right-section">
         <div class="upper-part">
@@ -127,7 +127,7 @@
       </div>
     </section>
     <!-- content 3 -->
-    <section class="home-content-3">
+    <section class="home-content-3 d-none d-sm-flex">
       <p class="hero">Our Latest News</p>
       <div class="middle-cont">
         <div class="program-news">
@@ -159,11 +159,11 @@
       <a class="viewMore">VIEW ALL</a>
     </section>
     <!-- content 4 -->
-    <section class="home-content-4">
+    <section class="home-content-4 d-none d-sm-flex">
       <div class="upper-content">Content 4 For JS</div>
     </section>
     <!-- content 5 -->
-    <section class="home-content-5">
+    <section class="home-content-5 d-none d-sm-flex">
       <div class="back-bg"></div>
       <div class="top-bg"></div>
       <div class="content-cont">
@@ -239,7 +239,7 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer-cont">
+    <footer class="footer-cont d-none d-sm-flex">
       <div class="upper-cont">
         <div class="left-section">
           <img src="img/logo.png" alt="The logo of the page" />
@@ -331,6 +331,111 @@
       </div>
       <div class="lower-cont">
         Copyright information: © 2023 JoylandSchool. All rights reserved.
+      </div>
+    </footer>
+    <!-- home page mobile view -->
+    <header class="nav-mobile d-block d-sm-none"></header>
+    <footer class="mobile-home-footer d-flex d-sm-none">
+      <div class="upperPart">
+        <img src="img/logo.png" alt="logo of the page" />
+        <p class="header">[SCHOOL NAME]</p>
+        <p class="tagline">
+          “Whether you're a current student, parent, or prospective applicant,
+          we hope you find our website informative and engaging.”
+        </p>
+      </div>
+      <div class="quick-links-mobile">
+        <p class="header-link">Quick Links</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Home</a>
+          <a class="links" href="#">About Us</a>
+          <a class="links" href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="academic">
+        <p class="header-link">Academics</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Curriculum</a>
+          <a class="links" href="#">Departments</a>
+          <a class="links" href="#">Course Catalog</a>
+        </div>
+      </div>
+      <div class="extracurricularActivities">
+        <p class="header-link">Extracurricular Activities</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Clubs and Organizations</a>
+          <a class="links" href="#">Athletics</a>
+          <a class="links" href="#">Fine Arts</a>
+          <a class="links" href="#">Community Service</a>
+        </div>
+      </div>
+      <div class="resources">
+        <p class="header-link">Resources</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Library</a>
+          <a class="links" href="#">Technology</a>
+          <a class="links" href="#">Counseling</a>
+          <a class="links" href="#">Health Services</a>
+        </div>
+      </div>
+      <div class="newsletter-mobile">
+        <p class="newsletter-header">Newsletter</p>
+        <div class="newsletterForm">
+          <p class="form-header">
+            Stay up to date with the latest news and events from our school!
+            Subscribe to our newsletter
+          </p>
+          <input
+            type="email"
+            id="emailNewsletterMobile"
+            placeholder="Email Address"
+          />
+          <button id="subscribeBtnMobile">Subscribe</button>
+        </div>
+      </div>
+      <div class="socialMedialinksMobile">
+        <p class="socialHeader">Follow us on Social Media</p>
+        <div class="footer-links">
+          <a href="#">
+            <img src="img/twitter.svg" alt="twitter icon" />
+          </a>
+          <a href="#">
+            <img src="img/instagram.svg" alt="instagram icon" />
+          </a>
+          <a href="#">
+            <img src="img/facebook.svg" alt="facebook icon" />
+          </a>
+          <a href="#">
+            <img src="img/linkedin.svg" alt="linkedin" />
+          </a>
+          <a href="#">
+            <img src="img/youtube.svg" alt="youtube-icon" />
+          </a>
+        </div>
+      </div>
+      <div class="wrtuMobile">
+        <p class="wrtuHeader">Where to reach us?</p>
+        <div class="wrtuCont">
+          <div class="wrtuLinks">
+            <img
+              class="location-icon"
+              src="img/location.svg"
+              alt="location icon"
+            />
+            <img
+              class="telephone-icon"
+              src="img/telephone.svg"
+              alt="phone icon"
+            />
+            <img class="email-icon" src="img/email.svg" alt="email icon" />
+            <p class="location">123 Main St., Anytown, USA 12345</p>
+            <p class="number">(+63)934-887-9902</p>
+            <p class="emailwtru">info@yourschool.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="lower-part">
+        Copyright information: © 2023 [Your Company Name]. All rights reserved.
       </div>
     </footer>
     <!-- PUT ALL THE JS HERE AND SCRIPT -->
