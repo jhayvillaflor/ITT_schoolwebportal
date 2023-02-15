@@ -127,7 +127,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15em;
+  padding: 0 110px;
   //   child
   .upper-cont {
     width: 100%;
@@ -334,14 +334,14 @@ body {
   }
 }
 // responsivenes
-@media only screen and (max-width: 500px) {
-  .footer-cont {
-    display: none;
-  }
-  .navigation-cont {
-    display: none;
-  }
-}
+// @media only screen and (max-width: 500px) {
+//   .footer-cont {
+//     display: none;
+//   }
+//   .navigation-cont {
+//     display: none;
+//   }
+// }
 // home contents
 // content 1
 .home-content-1 {
@@ -617,5 +617,164 @@ body {
   .viewMore {
     font-size: fontSizes(navFontSize);
     color: #abc0ff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+// content 4
+.home-content-4 {
+  background-color: testBgColor(color1);
+  width: 100vw;
+  height: 850px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 128px;
+}
+// content 5
+.home-content-5 {
+  background-color: testBgColor(color1);
+  width: 100vw;
+  height: 660px;
+  margin-top: 15em;
+  position: relative;
+  // children
+  .top-bg {
+    background-color: #28355d;
+    width: 100%;
+    height: 60%;
+  }
+  .back-bg {
+    background-color: #182039;
+    width: 100%;
+    height: 40%;
+  }
+  .content-cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    // children
+    .hero {
+      color: #ffffff;
+      font-size: fontSizes(heroFontSize);
+      font-weight: bold;
+    }
+    .card-cont {
+      width: 1200px;
+      height: 390px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 52px;
+      // children
+      .cards {
+        background-color: #495e9f;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 6px 6px 1px #51f4fe;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 36px;
+        // child
+        .upper-part {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          // children
+          .svg-cont {
+            width: 110px;
+            height: 65px;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          .description {
+            font-size: fontSizes(navFontSize);
+            color: #ffffff;
+            font-weight: bold;
+          }
+        }
+        .lower-part {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          // child
+          .date {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 3px;
+          }
+          .lower-description {
+            font-size: 14px;
+            color: #ffffff;
+          }
+        }
+      }
+      .card-1 {
+        // child
+        .upper-part {
+          // child
+          .svg-cont {
+            background-image: url(../img/handshake.svg);
+          }
+        }
+      }
+      .card-2 {
+        // child
+        .upper-part {
+          // child
+          .svg-cont {
+            background-image: url(../img/music.svg);
+          }
+        }
+      }
+      .card-3 {
+        // child
+        .upper-part {
+          // child
+          .svg-cont {
+            background-image: url(../img/ball.svg);
+          }
+        }
+      }
+      .card-4 {
+        // child
+        .upper-part {
+          // child
+          .svg-cont {
+            background-image: url(../img/collage-agrrement.svg);
+          }
+        }
+      }
+    }
+    .lower-btn {
+      width: 200px;
+      display: flex;
+      height: 25px;
+      justify-content: space-evenly;
+      align-items: center;
+      // child
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: fontSizes(navFontSize);
+        transition: padding 0.15s;
+      }
+      a:hover {
+        padding-right: 10px;
+      }
+    }
   }
 }
