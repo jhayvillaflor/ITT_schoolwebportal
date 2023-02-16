@@ -334,7 +334,48 @@
       </div>
     </footer>
     <!-- home page mobile view -->
-    <header class="nav-mobile d-block d-sm-none"></header>
+    <header class="nav-cont d-flex d-sm-none">
+      <div class="left-section">
+        <img src="img/logo.png" alt="logo of the page" />
+      </div>
+      <div class="hamburger-section">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+      </div>
+      <nav class="nav-bar-mobile">
+        <div class="upper-nav">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="lower-nav">
+          <div class="academic">
+            <p class="academicHeader">Academics</p>
+            <a href="#">Curriculum</a>
+            <a href="#">Departments</a>
+            <a href="#">Course Catalog</a>
+          </div>
+          <div class="extracurricularActivities">
+            <p class="extracurricularActivitiesHeader">
+              Extracurricular Activities
+            </p>
+            <a href="#">Clubs and Organizations</a>
+            <a href="#">Athletics</a>
+            <a href="#">Fine Arts</a>
+            <a href="#">Community Service</a>
+          </div>
+          <div class="resources">
+            <p class="resourcesHeader">Resources</p>
+            <a href="#">Library</a>
+            <a href="#">Technology</a>
+            <a href="#">Counseling</a>
+            <a href="#">Health Services</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <footer class="mobile-home-footer d-flex d-sm-none">
       <div class="upperPart">
         <img src="img/logo.png" alt="logo of the page" />
@@ -456,6 +497,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="JS/script.js"></script>
-    <!-- bootstrap CDN script-->
+    <!-- mobile function -->
+    <script>
+      const hamburgerSection = document.querySelector(".hamburger-section");
+      const navBarMobile = document.querySelector(".nav-bar-mobile");
+
+      hamburgerSection.addEventListener("click", function () {
+        navBarMobile.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>

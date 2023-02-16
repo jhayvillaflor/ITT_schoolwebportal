@@ -781,11 +781,136 @@ body {
   }
 }
 // home mobile view
-.nav-mobile {
-  background-color: testBgColor(color1);
-  height: 45px;
+.nav-cont {
+  background-color: #081027;
+  height: 55px;
   width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  // child
+  .left-section {
+    width: 55px;
+    height: 50px;
+    img {
+      width: 100%;
+    }
+  }
+  .hamburger-section {
+    width: 45px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    // child
+    .lines {
+      height: 3px;
+      width: 100%;
+      background-color: #51f4fe;
+    }
+  }
+  .nav-bar-mobile {
+    background-color: #081027;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.2s;
+    overflow: hidden;
+    // child
+    .upper-nav {
+      width: 100%;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: 0.5s;
+      opacity: 0;
+      // child
+      a {
+        font-size: fontSizes(navFontSize);
+        font-weight: bold;
+        text-decoration: none;
+        color: #abc0ff;
+      }
+    }
+    .lower-nav {
+      width: 100%;
+      height: 470px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+      transition: 0.5s;
+      opacity: 0;
+      // child
+      .academic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // child
+        p {
+          font-size: 20px;
+          color: #abc0ff;
+          font-weight: bold;
+        }
+        a {
+          text-decoration: none;
+          color: #51f4fe;
+        }
+      }
+      .extracurricularActivities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // child
+        p {
+          font-size: 20px;
+          color: #abc0ff;
+          font-weight: bold;
+        }
+        a {
+          text-decoration: none;
+          color: #51f4fe;
+        }
+      }
+      .resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // child
+        p {
+          font-size: 20px;
+          color: #abc0ff;
+          font-weight: bold;
+        }
+        a {
+          text-decoration: none;
+          color: #51f4fe;
+        }
+      }
+    }
+  }
+  .show {
+    height: 650px;
+    // child
+    .upper-nav {
+      opacity: 1;
+    }
+    .lower-nav {
+      opacity: 1;
+    }
+  }
 }
+
 .mobile-home-footer {
   background-color: #081027;
   width: 100vw;
