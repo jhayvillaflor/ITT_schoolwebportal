@@ -23,6 +23,21 @@ body {
     left: 100%; /* move the whole width of the image to the right */
     margin-left: -200%; /* magic! */
   }
+  .smsize {
+    width: 327px;
+  }
+  .md {
+    width: 30%;
+  }
+  .md1 {
+    width: 28%;
+  }
+  .mmd {
+    width: 18%;
+  }
+  .mmd1 {
+    width: 18%;
+  }
 }
 
 @media (min-width: 700px) {
@@ -32,6 +47,19 @@ body {
   }
   .m5 {
     padding-left: 100px;
+    height: 500px;
+  }
+  .lg {
+    width: 44%;
+  }
+  .lg1 {
+    width: 40%;
+  }
+  .llg {
+    width: 44%;
+  }
+  .llg1 {
+    width: 40%;
   }
 }
 
@@ -92,7 +120,7 @@ body {
   background-image: url("../img/Component-29.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 400px;
   position: relative;
   margin-left: 15px;
 }
@@ -101,4 +129,130 @@ body {
   padding-left: 40px;
   width: 75%;
   font-size: 0.7rem;
+}
+.vm-bg {
+  background-image: url(../img/Rectangle\ 37.png);
+  height: 416px;
+  background-repeat: no-repeat;
+}
+
+/* animation js part of the about page */
+.piclong1 {
+  background-image: url(../img/teach-long.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vw;
+}
+.piclong2 {
+  background-image: url(../img/teach1-long.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vw;
+}
+.piclong3 {
+  background-image: url(../img/teach2-long.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vw;
+}
+.piclong4 {
+  background-image: url(../img/teach3-long.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vw;
+}
+.pic1 {
+  background-color: blue;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 1px solid darkblue;
+  margin: 10px;
+}
+.pic2 {
+  background-color: green;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 1px solid darkgreen;
+  margin: 10px;
+}
+.pic3 {
+  background-color: yellow;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 1px solid yellowgreen;
+  margin: 10px;
+}
+.pic4 {
+  background-color: magenta;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 1px solid rgb(149, 0, 149);
+  margin: 10px;
+}
+.tr-row {
+  display: flex;
+}
+.off {
+  display: none;
+}
+
+.on {
+  display: block;
+}
+#details1,
+#details2,
+#details3,
+#details4,
+.piclong1,
+.piclong2,
+.piclong3,
+.piclong4 {
+  transition: all 0.5s ease-in-out;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
+  cursor: pointer;
+}
+
+/* animation */
+.animate-right {
+  opacity: 0;
+  transform: translateX(50%);
+  animation: fade-in-right 0.5s ease-in forwards;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-out.hide {
+  opacity: 0;
+}
+
+.small-sizing {
+  height: 700px;
+}
+@media (max-width: 700px) {
+  .small-sizing {
+    height: 250px;
+  }
 }
