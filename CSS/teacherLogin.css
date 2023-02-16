@@ -46,22 +46,105 @@ nav {
   color: #ffffff;
   background-color: #21305b;
 }
-inthisexample,the.footerelementisgiven a fixed position using the position property, with bottom: 0
+/* inthisexample,the.footerelementisgiven a fixed position using the position property, with bottom: 0
   to stick it to the bottom of the viewport. The width is set to 100% to make it
   span the entire width li {
   padding-top: 5px;
   padding-bottom: 5px;
-}
+} */
 tr,
 td {
   padding: 10px;
 }
-table,
+.darkbox table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #51f4fe;
 }
 
 .fs {
-  font-size: x-small;
+  font-size: 16px;
+}
+.editBtn {
+  border: none;
+  width: 130px;
+  height: 35px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2e3f70;
+}
+.editBtn:hover {
+  border: 1px solid #51f4fe;
+  color: #51f4fe;
+  background-color: transparent;
+  transition: 0.15s;
+}
+.payrollSubmitBtn {
+  border: none;
+  width: 130px;
+  height: 35px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2e3f70;
+}
+.payrollSubmitBtn:hover {
+  border: 1px solid #51f4fe;
+  color: #51f4fe;
+  background-color: transparent;
+  transition: 0.15s;
+}
+.myClassesSubmitBtn {
+  border: none;
+  width: 130px;
+  height: 35px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2e3f70;
+}
+.myClassesSubmitBtn:hover {
+  border: 1px solid #51f4fe;
+  color: #51f4fe;
+  background-color: transparent;
+  transition: 0.15s;
+}
+#content2 table,
+th,
+td {
+  border: 1px solid #51f4fe;
+}
+.navbar-nav a {
+  color: white;
+}
+.active {
+  color: #51f4fe !important;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.navbar-nav a:active {
+  color: #51f4fe;
+}
+.navbar-nav a:hover {
+  color: #51f4fe;
+}
+
+.navbar-nav .logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #374470;
+  width: 120px;
+  height: 100%;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.navbar-nav .logout:hover {
+  background-color: transparent;
+  border: 1px solid #51f4fe;
 }

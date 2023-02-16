@@ -34,16 +34,19 @@
     <!-- body -->
     <!-- body -->
     <!-- body -->
-    <nav class="navbar navbar-expand-lg" >
+    <nav class="navbar navbar-expand-lg" style="background-color: #081027;" >
       <div class="container">
         <a class="navbar-brand" href="#"
           ><div class="row">
             <div class="col-6 d-flex">
               <img src="../img/logo.png" height="80px" alt="school logo" />
               <div class="col-12 ps-2 pt-2">
-                <p>
-                  Empowering Educators,<br />
-                  Elevating Learning<br />
+                <p style="
+                color: #FFFFFF;
+                font-weight: normal;
+                ">
+                  "Empowering Educators,<br />
+                  Elevating Learning"<br />
                   - Joyland School Inc.
                 </p>
               </div>
@@ -66,18 +69,20 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" data-content="content1" href="#">Profile</a>
-            <a class="nav-link" data-content="content2" href="#">My Classes</a>
-            <a class="nav-link" data-content="content3" href="#">My Payroll</a>
-            <a class="nav-link" href="#">Log Out</a>
+            <a class="nav-link profile active" data-content="content1" href="#">Profile</a>
+            <a class="nav-link myclasses" data-content="content2" href="#">My Classes</a>
+            <a class="nav-link myPayroll" data-content="content3" href="#">My Payroll</a>
+            <a class="nav-link logout" href="#">Log Out</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- body -->
     <div class="mt-5 container">
-      <div class="row">
-        <div class="col-3 darkbox m-3 text-center pt-4">
+      <div class="row" >
+        <div class="col-3 darkbox m-3 text-center pt-4" style="
+          border-radius: 8px;
+          ">
           <p class="fs-4">Welcome,</p>
           <h1>
             <span id="UserFname">span with ID</span>
@@ -85,7 +90,10 @@
           <img
             src="../img/teacherID.jpg"
             alt="User Picture"
-            style="border: 5px solid #e3f2fd"
+            style="
+            border: 5px solid #51F4FE;
+            border-radius: 8px;
+            "
             class="img-fluid mt-3"
           />
           <div class="text-center mt-5">
@@ -96,9 +104,9 @@
             <h5 id="author"></h5>
           </div>
         </div>
-        <div class="darkbox mt-3 p-4 col">
+        <div class="darkbox mt-3 p-4 col" style="border-radius: 8px;">
           <!-- TABLE FOR USER PROFILE -->
-          <table cellpadding="10px" width="100%" border="0" id="content1">
+          <table cellpadding="10px" width="100%"  id="content1">
             <tbody>
               <tr></tr>
               <tr>
@@ -215,13 +223,13 @@
                 <td></td>
                 <td></td>
                 <td>
-                  <button onclick="editNumbers()">Edit</button>
+                  <button onclick="editNumbers()" class="editBtn">Edit</button>
                 </td>
               </tr>
             </tbody>
           </table>
           <!-- TABLE FOR MY CLASSES -->
-          <div id="content2" style="display: none;">
+          <div id="content2" style="display: none;" >
           <table class="my-3" >
             <tbody">
               <tr>
@@ -260,6 +268,7 @@
                 <td></td>
                 <td>
                   <input
+                  class="myClassesSubmitBtn"
                     name="Submit"
                     id="Submit1"
                     type="submit"
@@ -269,7 +278,7 @@
               </tr>
             </tbody>
           </table>
-          <table cellpadding="1" width="100%" border="2">
+          <table cellpadding="1" width="100%">
             <tbody>
               <tr>
                 <td colspan="4">Class Schedule</td>
@@ -370,7 +379,7 @@
         </div>
           <!-- TABLE FOR MY Payroll -->
           <div id="content3" style="display: none;">
-          <form
+          <form  
             name="frmSearchParam"
             id="frmSearchParam"
             action="default.cfm"
@@ -409,7 +418,7 @@
                   </td>
                   <td></td>
                   <td>
-                    <input
+                    <input class="payrollSubmitBtn"
                       name="Submit"
                       id="Submit"
                       type="submit"
@@ -421,7 +430,7 @@
             </table>
           </form>
           <h1>My Payroll</h1>
-          <table width="100%" border="1" cellspacing="3" cellpadding="3">
+          <table width="100%" cellspacing="3" cellpadding="3">
             <tbody>
               <tr>
                 <td colspan="7">Joyland School Inc.</td>
@@ -525,7 +534,7 @@
         </div>
       </div>
     </div>
-    <div class="lower-cont ">
+    <div class="lower-cont">
       <div class="fs">Copyright information: © 2023 JoylandSchool. All rights reserved.</div>
     </div>
 
