@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #293864;
+  color: white;
+}
+.cont-img {
+  width: 100%; /* or whatever is required */
+  text-align: center; /* ensures the image is always in the h-middle */
+  overflow: hidden; /* hide the cropped portion */
+}
+
+@media (max-width: 700px) {
+  .imgs {
+    position: relative; /* allows repositioning */
+    left: 100%; /* move the whole width of the image to the right */
+    margin-left: -200%; /* magic! */
+  }
+}
+
+@media (min-width: 700px) {
+  .imgs {
+    width: 100%;
+    height: auto;
+  }
+  .m5 {
+    padding-left: 100px;
+  }
+}
+
+.dbbk {
+  background-color: #29334f;
+}
+
+.cont-img-front {
+  position: relative;
+  height: 100%; /* adjust height as needed */
+}
+
+.cont-img-front img {
+  position: absolute;
+  top: -70px; /* adjust top position as needed */
+  left: -10%; /* center the image horizontally */
+  transform: translateX(-50%); /* center the image horizontally */
+  z-index: 1; /* make the image overlap the content below */
+}
+
+.pbb-5 {
+  padding-bottom: 1.2px;
+  margin-right: 100px;
+}
+
+.centeredonimgfloat {
+  position: absolute;
+  top: 50px;
+  left: -15%;
+  transform: translate(-50%, -50%);
+
+  font-size: smaller;
+}
+.containeronimgfloat {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.background-image {
+  background-image: url("../img/Component-29.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  top: -200px;
+  z-index: 2;
+}
+
+.paddingsForThis {
+  padding-top: 65px;
+  padding-left: 65px;
+  width: 500px;
+  font-size: 1.3rem;
+}
+
+.background-image-small {
+  background-image: url("../img/Component-29.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  margin-left: 15px;
+}
+.paddingsForThisSmall {
+  padding-top: 40px;
+  padding-left: 40px;
+  width: 75%;
+  font-size: 0.7rem;
+}
