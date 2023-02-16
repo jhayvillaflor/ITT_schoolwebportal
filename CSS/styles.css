@@ -951,7 +951,7 @@ body {
 }
 .nav-cont .hamburger-section {
   width: 45px;
-  height: 35px;
+  height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,13 +962,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nav-cont .hamburger-section .lines {
   height: 3px;
   width: 100%;
   background-color: #51f4fe;
+  border-radius: 8px;
 }
 .nav-cont .nav-bar-mobile {
   background-color: #081027;
