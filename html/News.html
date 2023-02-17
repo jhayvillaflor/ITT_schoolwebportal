@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <!-- jquey CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- bootstrap CDN css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+
+/* Default styles for news card */
+.news-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #293864;
+  color: white;
+}
+
+
+.news-card img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.news-card-content {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .news-card {
+    flex-direction: column;
+  }
+  
+  .news-card img {
+    max-width: 100%;
+
+  }
+}
+
+
+.header-text {
+
+font-family: 'Times New Roman', Times, serif;
+}
+.see-less {
+
+  display:none;
+
+}
+
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+  </style>
+
+<script>
+  $(document).ready(function(){
+    $(".content").hide();
+    $(".see-more").click(function(){
+      $(this).parent().find(".content").show(200);
+      $(this).hide();
+      $(this).parent().find(".see-less").show();
+    });
+    $(".see-less").click(function(){
+      $(this).parent().find(".content").hide(200);
+      $(this).hide();
+      $(this).parent().find(".see-more").show();
+    });
+  });
+</script>
+
+
+<body>
+  
+  <div class="header-text">
+    <h1 style="text-align: center;"> JOYLAND NEWS</h1>
+    <h5 style="text-align: center;">Stories of people, research and innovation in and out of the Campus</h5>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="news-card col-sm-12 col-lg-12">
+          <img src="img/Alumni.jpg" alt="Sample Image">
+          <div class="news-card-content">
+            <h2 class="news-card-title">Alumni Homecoming 2023</h2>
+            <div>
+              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+              <button class="see-more">See More</button>
+              <button class="see-less">See Less</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="news-card col-sm-12 col-lg-12">
+          <img src="img/projectai.jpg" alt="Sample Image">
+          <div class="news-card-content">
+            <h2 class="news-card-title">AI Project</h2>
+            <div>
+              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+              <button class="see-more">See More</button>
+              <button class="see-less">See Less</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="news-card col-sm-12 col-lg-12">
+          <img src="img/Champ.jpg" alt="Sample Image">
+          <div class="news-card-content">
+            <h2 class="news-card-title">Joyland School Champion</h2>
+            <div>
+              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+              <button class="see-more">See More</button>
+              <button class="see-less">See Less</button>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="news-card col-sm-12 col-lg-12">
+          <img src="img/bright.jpg" alt="Sample Image">
+          <div class="news-card-content">
+            <h2 class="news-card-title">Bright Future Ahead</h2>
+            <div>
+              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+              <button class="see-more">See More</button>
+              <button class="see-less">See Less</button>
+            </div>
+          </div>
+          
+        </div>
+        
+  
+
+      </div>
+    </div>
+  
+  
+
+
+</div>
+</div>
+
+  
+</body>
+</html>
+
+
