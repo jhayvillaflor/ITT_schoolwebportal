@@ -1,4 +1,3 @@
-// FOR API
 const API_URL = "https://api.goprogram.ai/inspiration";
 
 async function getQuote() {
@@ -6,13 +5,29 @@ async function getQuote() {
     const response = await fetch(API_URL);
     const data = await response.json();
 
-    document.getElementById("quote-message").style.display = "none";
-    document.getElementById("quote").innerHTML = `"${data.quote}"`;
-    document.getElementById("author").innerHTML = `- ${data.author}`;
+    const quoteMessages = document.querySelectorAll(".quote-message");
+    const quotes = document.querySelectorAll(".quote");
+    const authors = document.querySelectorAll(".author");
+
+    quoteMessages.forEach((quoteMessage) => {
+      quoteMessage.style.display = "none";
+    });
+
+    quotes.forEach((quote) => {
+      quote.innerHTML = `"${data.quote}"`;
+    });
+
+    authors.forEach((author) => {
+      author.innerHTML = `- ${data.author}`;
+    });
   } catch (error) {
     console.error(error);
   }
 }
+
+window.onload = function () {
+  getQuote();
+};
 
 window.onload = function () {
   getQuote();
@@ -150,3 +165,26 @@ function saveNumbers() {
   editButton.innerText = "Edit";
   editButton.onclick = editNumbers;
 }
+
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Remove 'active' class from all links
+    navLinks.forEach((l) => {
+      l.classList.remove("active");
+    });
+    // Add 'active' class to the clicked link
+    link.classList.add("active");
+  });
+});
+
+const logoutButton = document.querySelector("#logout-button");
+logoutButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  // Remove the username and password from local storage
+  localStorage.removeItem("username");
+  localStorage.removeItem("password");
+  // Redirect the user to index.html
+  window.location.href = "index.html";
+});

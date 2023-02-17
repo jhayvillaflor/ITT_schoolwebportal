@@ -72,20 +72,22 @@
             <a class="nav-link profile active" data-content="content1" href="#">Profile</a>
             <a class="nav-link myclasses" data-content="content2" href="#">My Classes</a>
             <a class="nav-link myPayroll" data-content="content3" href="#">My Payroll</a>
-            <a class="nav-link logout" href="#">Log Out</a>
+            <a class="nav-link logout" href="#" id="logout-button">Log Out</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- body -->
-    <div class="mt-5 container">
+    <div class="container d-block d-sm-none"><p class="fs-4 pt-3">Welcome,<span id="UserFname"> Tina</span></p>
+      </div>
+    <div class="container">
       <div class="row" >
-        <div class="col-3 darkbox m-3 text-center pt-4" style="
+        <div class="col-3 darkbox m-3 text-center pt-3 d-none d-md-block" style="
           border-radius: 8px;
           ">
           <p class="fs-4">Welcome,</p>
           <h1>
-            <span id="UserFname">span with ID</span>
+            <span id="UserFname">Tina</span>
           </h1>
           <img
             src="../img/teacherID.jpg"
@@ -97,17 +99,17 @@
             class="img-fluid mt-3"
           />
           <div class="text-center mt-5">
-            <h3 id="quote-message">
+            <h3 class="quote-message">
               Your quote is being teleported from the cloud ☁️✨
             </h3>
-            <h3 id="quote"></h3>
-            <h5 id="author"></h5>
+            <h3 class="quote"></h3>
+            <h5 class="author"></h5>
           </div>
+          
         </div>
-        <div class="darkbox mt-3 p-4 col" style="border-radius: 8px;">
+        <div class="darkbox mt-3 p-4 col">
           <!-- TABLE FOR USER PROFILE -->
           <table cellpadding="10px" width="100%"  id="content1">
-            <tbody>
               <tr></tr>
               <tr>
                 <td colspan="3">Profile Information</td>
@@ -226,12 +228,11 @@
                   <button onclick="editNumbers()" class="editBtn">Edit</button>
                 </td>
               </tr>
-            </tbody>
+            
           </table>
           <!-- TABLE FOR MY CLASSES -->
           <div id="content2" style="display: none;" >
           <table class="my-3" >
-            <tbody">
               <tr>
                 <td>
                   Stepss 1. <b>Period / Semester</b>
@@ -276,10 +277,10 @@
                   />
                 </td>
               </tr>
-            </tbody>
+            
           </table>
           <table cellpadding="1" width="100%">
-            <tbody>
+            
               <tr>
                 <td colspan="4">Class Schedule</td>
               </tr>
@@ -374,7 +375,7 @@
                   <div>4:00PM-5:30PM / Th - B503 MIB</div>
                 </td>
               </tr>
-            </tbody>
+            
           </table>
         </div>
           <!-- TABLE FOR MY Payroll -->
@@ -387,7 +388,7 @@
             onsubmit="return _CF_checkfrmSearchParam(this)"
           >
             <table class="my-3">
-              <tbody>
+              
                 
                   <td>
                     Stepss 1. <b>Month Year/ Cut-off</b>
@@ -426,12 +427,12 @@
                     />
                   </td>
                 </tr>
-              </tbody>
+              
             </table>
           </form>
           <h1>My Payroll</h1>
           <table width="100%" cellspacing="3" cellpadding="3">
-            <tbody>
+            
               <tr>
                 <td colspan="7">Joyland School Inc.</td>
               </tr>
@@ -528,13 +529,20 @@
                 <td></td>
                 <td></td>
               </tr>
-            </tbody>
+            
           </table>
         </div>
         </div>
       </div>
     </div>
-    <div class="lower-cont">
+    <div class="text-center mt-5 d-block d-sm-none">
+      <h3 class="quote-message">
+        Your quote is being teleported from the cloud ☁️✨
+      </h3>
+      <h3 class="quote"></h3>
+      <h5 class="author"></h5>
+    </div>
+    
       <div class="fs">Copyright information: © 2023 JoylandSchool. All rights reserved.</div>
     </div>
 
@@ -547,11 +555,7 @@
       AOS.init();
     </script>
     <!-- jquey CDN -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="../react-files/src/"></script>
     <!-- bootstrap CDN script-->
     <script
@@ -559,19 +563,9 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <!-- REACT -->
-   <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+   
+    
 
-    <!-- Load our React component. -->
-    <script src="like_button.js"></script>
+    
   </body>
 </html>
