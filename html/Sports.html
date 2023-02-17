@@ -4,9 +4,394 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <title>Document</title>
 </head>
+
+<style>
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    background-color:#2e466e;
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+  }
+
+
+
+  .header-text{
+
+font-size: larger;
+font-weight: bolder;
+padding: 0%;
+margin-top: 3rem;
+font-size: 500px
+  }
+
+  .header-text h1 {
+    font-size: 100px;
+    font-weight: 800;
+  }
+
+  .header-text h5 {
+    font-size: 20px;
+    letter-spacing: -0.2px;
+word-spacing: 2px;
+font-weight: 500;
+
+
+  }
+
+
+  .teamtext-container {
+color: aliceblue;
+
+  }
+
+  .teamtext-container h2 {
+
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  .teamtext-container p {
+
+font-size: 20px;
+font-weight: 800;
+}
+
+.sports-container {
+
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+font-weight: 600;
+background-color:#293864;
+
+border: 1px solid #ddd; 
+  width: 100%; 
+  height: 100%;
+}
+    
+
+    .item {
+			margin: 50px;
+			text-align: center;
+		}
+		.item img {
+			width: 100px;
+			height: 100px;
+		}
+        .item:hover {
+	background:linear-gradient(to bottom, skyblue 5%, #1b63d0 100%);
+	background-color:skyblue;
+        }
+        .view-button:active {
+	position:relative;
+	top:1px;
+}
+
+.schedule-container {
+padding: 0;
+   margin-top: 50px;
+text-align: center;
+
+}
+
+.schedule-container h2 {
+
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.view-button {
+	box-shadow:inset 0px 1px 0px 0px #7a92c2;
+	background-color:transparent;
+	border-radius:3px;
+	border:12px solid #304aa1;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:19px;
+	font-weight:bold;
+	padding:20px 48px;
+	text-decoration:none;
+}
+.view-button:hover {
+	background-color:darkblue;
+}
+.view-button:active {
+	position:relative;
+	top:1px;
+}
+
+.game-day {
+background-color: transparent;
+color: #ddd;
+
+}
+
+.game-day h2{
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+.game-day h2{
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+.game-day p{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.card {
+background-color: #cf866c;
+
+
+}
+
+
+.btn {
+	box-shadow: 7px -3px 37px -17px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:13px;
+	border:4px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:25px;
+	font-weight:bold;
+	padding:22px 76px;
+	text-decoration:none;
+	text-shadow:0px 0px 50px #5b6178;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.sports-news {
+
+    padding-top: 50px;
+    background-color:transparent;
+color: white;
+
+}
+
+.sports-news h3 {
+
+font-size: 50px;
+font-weight: 500;
+
+}
+
+
+
+.sports-news p{ color: black;
+
+font-size: 25px;
+font-weight: 400;
+
+}
+
+
+</style>
+
+
+
 <body>
     
+    <div class="container">
+<div class="row">
+    <div class="header-text">
+        <h1> Athletics</h1>
+        <h5>Joyland School of Technology Athletic Program focuses to collaborate with parents and staff to ensure our students continue to have a sports experience that can be rewarding for everyone. The coaches and staff are readily awaiting to provide our students with the best sports experience to help develop their skills, academic success, and continued athletic development.
+        </h5>
+</div>
+<div class="teamtext-container col-sm-12 col-lg-12">
+    <h2> Teams </h2>
+    <p> The program offers 4 Junior Varsity/Varsity teams over the course of 2 seasons which includes Volleyball, Girls Cross Country, Boys Cross Country, Girls Basketball, Boys Basketball, and Softball, Girls Track and Field, and Boys Track and Field.</p>
+    </div>
+
+    <div class="sports-container col-sm-12 col-lg-12">
+        <div class="item">
+            <img src="img/basket-ball.png" alt="Basketball">
+            <p>Basketball</p>
+        </div>
+        <div class="item">
+            <img src="img/volleyball.png" alt="Volleyball">
+            <p>Volleyball</p>
+        </div>
+        <div class="item">
+            <img src="img/pawn.png" alt="Chess">
+            <p>Chess</p>
+        </div>
+        <div class="item">
+            <img src="img/soccer-ball.png" alt="Soccer">
+            <p>Soccer</p>
+        </div>
+        <div class="item">
+            <img src="img/cap.png" alt="Baseball">
+            <p>Baseball</p>
+        </div>
+        <div class="item">
+            <img src="img/race-track.png" alt="Track and Field">
+            <p>Track and Field</p>
+        </div>
+    </div>
+
+    <div class="schedule-container col-sm-12 col-lg-12">
+
+        <h2> View The Lates Schedules</h2>
+        <p> View our guide to see this year's athletic coaches, roster, schedules, and game stats.</p>
+        <button class="view-button">View</button>
+        
+        </div>
+
+
+        <div class="game-day">
+            <h2>Game day Details</h2>
+            <p>We are proud to invite families, students, faculty, staff, recruiters, and fans alike to 'The Chamber', Sci High's Gymnatorium for athletic events. In the sections below are details of what to expect for gameday's at Sci High.</p>
+        
+        </div>
+
+        
+<div class="updates-container col-sm-12 col-lg-12">
+ 
+    <a class="btn" data-bs-toggle="collapse" href="#collapseEx" role="button"> + Entrance </a>
+    <div class="collapse" id="collapseEx">
+    <div class="card card-body">
+    
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
+    
+    </div>
+    </div> 
+    
+    <a class="btn" data-bs-toggle="collapse" href="#collapseEx2" role="button"> + Admission </a>
+    <div class="collapse" id="collapseEx2">
+    <div class="card card-body">
+    
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    
+    </div>
+
+    
+<div class="updates-container col-sm-12 col-lg-12">
+ 
+    <a class="btn" data-bs-toggle="collapse" href="#collapseEx3" role="button"> + Parking </a>
+    <div class="collapse" id="collapseEx3">
+        <div class="card card-body">
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
+        
+        </div>
+        
+        
+        </div>
+    
+    <a class="btn" data-bs-toggle="collapse" href="#collapseEx4" role="button">  + Consessions </a>
+    <div class="collapse" id="collapseEx4">
+    <div class="card card-body">
+    
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
+    
+    </div>
+    
+    
+    </div>
+
+
+
+    
+    
+    
+    </div>
+
+
+
+<br>
+
+
+    <div class="sports-news col-sm-12 col-lg-12">
+<h3> News and Updates</h3>
+
+    <p><a href="#">Cross Country: Michael I. runs to State Competition</a></p>
+    <span style="color:lightcoral
+    ">Jan. 11, 2023</span>
+
+
+	<p><a href="#">Boy's Basketball</a></p>
+    <span style="color:lightcoral
+    ">Jan. 11, 2023</span>
+
+
+    <p><a href="#">Volleyball Schedule</a></p>
+    <span style="color:lightcoral
+    ">Jan. 11, 2023</span>
+
+    <p><a href="#">Girl's Basketball Schedule</a></p>
+    <span style="color:lightcoral
+    ">Jan. 11, 2023</span>
+    <p><a href="#">Boy's Basketball Schedule</a></p>
+    <span style="color:lightcoral
+    ">Jan. 11, 2023</span>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
 </body>
 </html>
