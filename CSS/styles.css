@@ -991,6 +991,7 @@ body {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   overflow: hidden;
+  z-index: 9999;
 }
 .nav-cont .nav-bar-mobile .upper-nav {
   width: 100%;
@@ -1390,7 +1391,7 @@ body {
   text-align: center;
   background-color: #142659;
   height: 35px;
-  width: 100%;
+  width: 80%;
 }
 .mobile-home-footer .newsletter-mobile .newsletterForm #emailNewsletterMobile:focus {
   outline: none;
@@ -1522,4 +1523,195 @@ body {
           align-items: center;
   padding: 0 10px;
   color: #ffffff;
+}
+
+.mobile-home-cont-1 {
+  background-color: #151e35;
+  width: 100vw;
+  height: 200px;
+  margin-top: 5em;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.mobile-home-cont-1 .upper-cont .tagline {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+.mobile-home-cont-1 .upper-cont .hero {
+  font-size: 20px;
+  font-weight: bold;
+  color: #51f4fe;
+}
+.mobile-home-cont-1 .lower-cont button {
+  width: 150px;
+  border: none;
+  height: 25px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #40568d;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 1px #51f4fe;
+          box-shadow: 2px 2px 1px #51f4fe;
+}
+.mobile-home-cont-1 .svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.mobile-home-cont-1 .svgtwo {
+  position: absolute;
+  top: 180px;
+  left: 300px;
+}
+.mobile-home-cont-1 .svgthree {
+  position: absolute;
+  top: 110px;
+  left: 280px;
+}
+
+.mobile-home-cont-2 {
+  background-color: #151e35;
+  height: 300px;
+  width: 100vw;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5em;
+  position: relative;
+  overflow: hidden;
+}
+.mobile-home-cont-2 .upper-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile-home-cont-2 .upper-cont .tagline {
+  font-size: 16px;
+  color: #ffffff;
+}
+.mobile-home-cont-2 .upper-cont .hero {
+  font-size: 20px;
+  font-weight: bold;
+  color: #51f4fe;
+  margin: 0;
+}
+.mobile-home-cont-2 .lower-cont {
+  height: 70px;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mobile-home-cont-2 .lower-cont p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+.mobile-home-cont-2 .lower-cont .icon-links {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile-home-cont-2 .lower-cont .icon-links a {
+  width: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile-home-cont-2 .lower-cont .icon-links a img {
+  width: 35px;
+}
+.mobile-home-cont-2 .svgOne {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  opacity: 40%;
+}
+.mobile-home-cont-2 .svgTwo {
+  position: absolute;
+  top: 200px;
+  left: 290px;
+}
+
+.mobile-home-cont-3 {
+  background-color: gray;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+}
+
+.mobile-home-cont-4 {
+  background-color: gray;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
 }
