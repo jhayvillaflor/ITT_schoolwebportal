@@ -755,18 +755,174 @@ body {
 .home-content-4 {
   background-color: gray;
   width: 100vw;
-  height: 850px;
+  height: 950px;
   margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.home-content-4 .top-bg {
+  background-color: #182039;
+  width: 100%;
+  height: 30%;
+  padding: 0 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.home-content-4 .top-bg .content-cont .hero {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+.home-content-4 .top-bg .content-cont .tagline {
+  font-size: 24px;
+  color: #ffffff;
+}
+.home-content-4 .top-bg .button-cont button {
+  border: none;
+  width: 260px;
+  height: 76px;
+  font-size: 24px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-color: #4864b5;
+  color: #ffffff;
+}
+.home-content-4 .top-bg .button-cont button:hover {
+  -webkit-box-shadow: 6px 6px 1px #51f4fe;
+          box-shadow: 6px 6px 1px #51f4fe;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+.home-content-4 .lower-bg {
+  background-color: #1e222e;
+  width: 100%;
+  height: 70%;
+  padding: 0 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.home-content-4 .lower-bg .upper-content {
+  width: 800px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 128px;
+}
+.home-content-4 .lower-bg .upper-content .box {
+  width: 105px;
+  height: 45px;
+  background-color: #51f4fe;
+  margin-right: 10px;
+}
+.home-content-4 .lower-bg .upper-content p {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 28.5px;
+  margin: 0;
+}
+.home-content-4 .lower-bg .lower-content {
+  width: 900px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home-content-4 .lower-bg .lower-content .left-section .tagline {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.home-content-4 .lower-bg .lower-content .left-section .description ul {
+  color: #ffffff;
+}
+.home-content-4 .lower-bg .lower-content .left-section .description ul li {
+  color: #ffffff;
+}
+.home-content-4 .lower-bg .lower-content .right-section {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home-content-4 .lower-bg .lower-content .right-section p {
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.home-content-4 .lower-bg .button-cont {
+  width: 350px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home-content-4 .lower-bg .button-cont button {
+  width: 130px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  margin: 0;
+}
+.home-content-4 .picture-cont {
+  background-color: blue;
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  top: 5em;
+  left: 65em;
 }
 
 .home-content-5 {
