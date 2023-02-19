@@ -772,11 +772,15 @@ body {
 .home-content-4 {
   background-color: gray;
   width: 100vw;
-  height: 850px;
+  height: 950px;
   margin-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
