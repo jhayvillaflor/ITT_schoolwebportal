@@ -388,7 +388,10 @@ body {
       background-color: #40568d;
       color: #ffffff;
       border-radius: 8px;
+    }
+    #readMoreBtn:hover {
       box-shadow: 6px 6px 1px #51f4fe;
+      transition: 0.15s;
     }
   }
   .right-section {
@@ -548,6 +551,11 @@ body {
           background-color: transparent;
           border: 1px solid #ffffff;
           color: #ffffff;
+        }
+        #newsReadMoreBtn:hover {
+          border: 1px solid #51f4fe;
+          color: #51f4fe;
+          transition: 0.15s;
         }
       }
     }
@@ -711,6 +719,9 @@ body {
       justify-content: space-between;
       // child
       .left-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         // child
         .tagline {
           font-size: fontSizes(taglineFontSize);
@@ -738,6 +749,10 @@ body {
           font-size: fontSizes(taglineFontSize);
           cursor: pointer;
         }
+        .active {
+          color: #51f4fe;
+          transition: 0.2s;
+        }
       }
     }
     .button-cont {
@@ -753,15 +768,20 @@ body {
         color: #ffffff;
         margin: 0;
       }
+      button:hover {
+        margin-right: 30px;
+        transition: 0.25s;
+      }
     }
   }
   .picture-cont {
-    background-color: testBgColor(color2);
     position: absolute;
     height: 800px;
     width: 800px;
     top: 5em;
     left: 65em;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 // content 5

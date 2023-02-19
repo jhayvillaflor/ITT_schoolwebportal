@@ -468,8 +468,12 @@ body {
   background-color: #40568d;
   color: #ffffff;
   border-radius: 8px;
+}
+.home-content-1 .left-section #readMoreBtn:hover {
   -webkit-box-shadow: 6px 6px 1px #51f4fe;
           box-shadow: 6px 6px 1px #51f4fe;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
 }
 .home-content-1 .right-section {
   width: 590px;
@@ -656,6 +660,12 @@ body {
   background-color: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
+}
+.home-content-3 .middle-cont .program-news .program-cont #newsReadMoreBtn:hover {
+  border: 1px solid #51f4fe;
+  color: #51f4fe;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
 }
 .home-content-3 .middle-cont .award-news {
   grid-area: awardNews;
@@ -865,6 +875,18 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.home-content-4 .lower-bg .lower-content .left-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .home-content-4 .lower-bg .lower-content .left-section .tagline {
   font-size: 24px;
   font-weight: bold;
@@ -897,6 +919,11 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
+.home-content-4 .lower-bg .lower-content .right-section .active {
+  color: #51f4fe;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 .home-content-4 .lower-bg .button-cont {
   width: 350px;
   height: 45px;
@@ -915,13 +942,19 @@ body {
   color: #ffffff;
   margin: 0;
 }
+.home-content-4 .lower-bg .button-cont button:hover {
+  margin-right: 30px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
 .home-content-4 .picture-cont {
-  background-color: blue;
   position: absolute;
   height: 800px;
   width: 800px;
   top: 5em;
   left: 65em;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home-content-5 {
