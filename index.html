@@ -765,5 +765,40 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/script.js"></script>
     <script src="JS/login.js"></script>
+    <script>
+      const computerSci = document.querySelector(".computer-sci");
+      const education = document.querySelector(".education");
+      const humanities = document.querySelector(".humanAndSocialSci");
+      const scienceMath = document.querySelector(".Sci-Math");
+      const pictureCont = document.querySelector(".picture-cont");
+
+      computerSci.addEventListener("click", () => {
+        pictureCont.style.backgroundImage = "url('img/kursoone.svg')";
+        setActive(computerSci);
+      });
+
+      education.addEventListener("click", () => {
+        pictureCont.style.backgroundImage = "url('img/kursofour.svg')";
+        setActive(education);
+      });
+
+      humanities.addEventListener("click", () => {
+        pictureCont.style.backgroundImage = "url('img/kursotwo.svg')";
+        setActive(humanities);
+      });
+
+      scienceMath.addEventListener("click", () => {
+        pictureCont.style.backgroundImage = "url('img/kursothree.svg')";
+        setActive(scienceMath);
+      });
+
+      function setActive(selected) {
+        const allCategories = [computerSci, education, humanities, scienceMath];
+        allCategories.forEach((category) => {
+          category.classList.remove("active");
+        });
+        selected.classList.add("active");
+      }
+    </script>
   </body>
 </html>
