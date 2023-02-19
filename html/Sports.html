@@ -1,397 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../img/logo.png" />
+<!-- Font-awesome -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <title>Sports</title>
+  </head>
+  <link href="../CSS/sports.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/styles.css" rel="stylesheet" type="text/css" />
+  <div>
+    <!-- Navigation Bar -->
+    <header class="navigation-cont d-none d-sm-flex">
+      <div class="left-section mb-3">
+        <img src="../img/logo.png" alt="The logo of the page" />
+      </div>
+      <div class="right-section-navlinks">
+        <div class="upper-nav">
+          <a class="home" href="../index.html">home</a>
+          <a class="about-us" href="../About-Us.html">about-us</a>
+          <a class="blogs" href="../HTML/News.html">News</a>
+          <button id="loginBtn">
+            <!-- svgToggle -->
+            <svg
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.12034 2.78315C8.94813 1.82061 9.98397 1.13592 11.1185 0.801381C12.2531 0.466843 13.4442 0.494868 14.5662 0.882496C15.6882 1.27012 16.6994 2.00297 17.4931 3.00367C18.2867 4.00436 18.8334 5.23577 19.0753 6.56788C19.3172 7.89999 19.2454 9.28337 18.8675 10.572C18.4896 11.8606 17.8197 13.0066 16.9283 13.889C16.037 14.7713 14.9573 15.3574 13.8034 15.5853C12.6495 15.8131 11.4641 15.6743 10.3723 15.1834L10.1033 15.0555L10.0833 15.0508H9.47334V16.8864C9.47349 17.2464 9.35883 17.5937 9.15157 17.861C8.94431 18.1283 8.65917 18.2967 8.35134 18.3335L8.22334 18.3405H6.64534V20.1761C6.64549 20.5361 6.53083 20.8833 6.32357 21.1507C6.11631 21.418 5.83118 21.5864 5.52334 21.6232L5.39534 21.6302H1.41234C1.16352 21.6302 0.923452 21.5234 0.738173 21.3302C0.552893 21.137 0.435443 20.871 0.408344 20.5833L0.402344 20.4553V17.4192C0.402344 17.0158 0.522491 16.6249 0.742344 16.313L0.842344 16.185L6.34234 9.78594L6.35234 9.7429C6.35543 9.71145 6.35408 9.67962 6.34834 9.64868C6.13193 8.42311 6.18055 7.15421 6.48984 5.95589C6.79912 4.75758 7.35939 3.66737 8.12034 2.78315ZM12.3623 6.07284C12.2231 6.23491 12.1126 6.42732 12.0373 6.63905C11.9619 6.85079 11.9232 7.07772 11.9232 7.30688C11.9233 7.53604 11.9621 7.76294 12.0375 7.97464C12.113 8.18634 12.2235 8.37868 12.3628 8.54068C12.5022 8.70268 12.6676 8.83117 12.8496 8.91882C13.0316 9.00647 13.2267 9.05155 13.4237 9.0515C13.6207 9.05144 13.8158 9.00625 13.9977 8.91851C14.1797 8.83076 14.3451 8.70218 14.4843 8.5401C14.7575 8.21086 14.9085 7.77001 14.9049 7.31251C14.9013 6.85501 14.7433 6.41746 14.4651 6.09409C14.1868 5.77073 13.8105 5.58743 13.4172 5.58367C13.024 5.57991 12.6451 5.75483 12.3623 6.07284Z"
+                fill="#293864"
+              />
+            </svg>
 
+            login
+          </button>
+        </div>
+        <div class="lower-nav">
+          <a href="../HTML/Admission.html">Admission</a>
+          <a class="active" href="../package-lock.json"
+            >Extracurricular Activities</a
+          >
+          <a href="#">Resources</a>
+        </div>
+      </div>
+    </header>
+    <!-- home page mobile view -->
+    <header class="nav-cont d-flex d-sm-none">
+        <div class="left-section">
+          <img src="../img/logo.png" alt="logo of the page" class="p-1"/>
+        </div>
+        <div class="hamburger-section" id="toggle">
+          <div class="lines line1"></div>
+          <div class="lines line2"></div>
 
-    <title>Document</title>
-</head>
-
-<style>
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-
-body {
-    background-color:#2e466e;
-    font-family: "Montserrat", sans-serif;
-    color: aliceblue;
-  }
-
-
-
-  .header-text{
-
-font-size: larger;
-font-weight: bolder;
-padding: 0%;
-margin-top: 3rem;
-font-size: 500px
-  }
-
-  .header-text h1 {
-    font-size: 100px;
-    font-weight: 800;
-  }
-
-  .header-text h5 {
-    font-size: 20px;
-    letter-spacing: -0.2px;
-word-spacing: 2px;
-font-weight: 500;
-
-
-  }
-
-
-  .teamtext-container {
-color: aliceblue;
-
-  }
-
-  .teamtext-container h2 {
-
-    font-size: 50px;
-    font-weight: 800;
-  }
-
-  .teamtext-container p {
-
-font-size: 20px;
-font-weight: 800;
-}
-
-.sports-container {
-
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-font-weight: 600;
-background-color:#293864;
-
-border: 1px solid #ddd; 
-  width: 100%; 
-  height: 100%;
-}
-    
-
-    .item {
-			margin: 50px;
-			text-align: center;
-		}
-		.item img {
-			width: 100px;
-			height: 100px;
-		}
-        .item:hover {
-	background:linear-gradient(to bottom, skyblue 5%, #1b63d0 100%);
-	background-color:skyblue;
-        }
-        .view-button:active {
-	position:relative;
-	top:1px;
-}
-
-.schedule-container {
-padding: 0;
-   margin-top: 50px;
-text-align: center;
-
-}
-
-.schedule-container h2 {
-
-    font-size: 50px;
-    font-weight: 800;
-}
-
-.view-button {
-	box-shadow:inset 0px 1px 0px 0px #7a92c2;
-	background-color:transparent;
-	border-radius:3px;
-	border:12px solid #304aa1;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Georgia;
-	font-size:19px;
-	font-weight:bold;
-	padding:20px 48px;
-	text-decoration:none;
-}
-.view-button:hover {
-	background-color:darkblue;
-}
-.view-button:active {
-	position:relative;
-	top:1px;
-}
-
-.game-day {
-background-color: transparent;
-color: #ddd;
-
-}
-
-.game-day h2{
-    font-size: 50px;
-    font-weight: 800;
-
-}
-
-.game-day h2{
-    font-size: 50px;
-    font-weight: 800;
-
-}
-
-.game-day p{
-    font-size: 15px;
-    font-weight: 400;
-
-}
-
-.card {
-background-color: #cf866c;
-
-
-}
-
-
-.btn {
-	box-shadow: 7px -3px 37px -17px #f0f7fa;
-	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-	background-color:#33bdef;
-	border-radius:13px;
-	border:4px solid #057fd0;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:25px;
-	font-weight:bold;
-	padding:22px 76px;
-	text-decoration:none;
-	text-shadow:0px 0px 50px #5b6178;
-}
-.btn:hover {
-	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-	background-color:#019ad2;
-}
-.btn:active {
-	position:relative;
-	top:1px;
-}
-
-.sports-news {
-
-    padding-top: 50px;
-    background-color:transparent;
-color: white;
-
-}
-
-.sports-news h3 {
-
-font-size: 50px;
-font-weight: 500;
-
-}
-
-
-
-.sports-news p{ color: black;
-
-font-size: 25px;
-font-weight: 400;
-
-}
-
-
-</style>
-
-
-
-<body>
-    
-    <div class="container">
-<div class="row">
+        </div>
+        <nav class="nav-bar-mobile">
+          <div class="upper-nav">
+            <a href="../index.html">Home</a>
+            <a href="../About-Us.html">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="lower-nav">
+            <div class="academic">
+              <p class="academicHeader toggle-link">Academics</p>
+              <div>
+                <a href="#">Curriculum</a>
+                <a href="#">Departments</a>
+                <a href="#">Course Catalog</a>
+              </div>
+            </div>
+            <div class="extracurricularActivities">
+              <p class="extracurricularActivitiesHeader toggle-link">
+                Extracurricular Activities
+              </p>
+              <div>
+                <a href="#">Clubs and Organizations</a>
+                <a href="../HTML/Sports.html">Athletics</a>
+                <a href="#">Fine Arts</a>
+                <a href="#">Community Service</a>
+              </div>
+            </div>
+            <div class="resources">
+              <p class="resourcesHeader toggle-link">Resources</p>
+              <div>
+                <a href="#">Library</a>
+                <a href="#">Technology</a>
+                <a href="#">Counseling</a>
+                <a href="#">Health Services</a>
+              </div>
+            </div>
+          </div>
+          
+        </nav>
+      </header>
+      
+    <!-- BODY -->
+    <div
+      class="swiffy-slider slider-item-ratio-32x9 slider-nav-autoplay slider-nav-autopause slider-nav-animation slider-nav-animation-fadein"
+      data-slider-nav-autoplay-interval="2500" data-aos="zoom-in"
+    >
+      <ul class="slider-container">
+        <li class="">
+          <div id="slide1"><img src="../img/bball.jpg" class="smallpx" alt="icon for basketball"/></div>
+        </li>
+        <li class="">
+          <div id="slide2"><img src="../img/vball.jpg" class="smallpx" alt="icon for volleyball"/></div>
+        </li>
+        <li class="">
+          <div id="slide3"><img src="../img/soccer.jpg" class="smallpx" alt="icon for soccer"/></div>
+        </li>
+        <li class="">
+          <div id="slide4"><img src="../img/chess.jpg" class="smallpx" alt="icon for chess"/></div>
+        </li>
+        <li class="">
+          <div id="slide5"><img src="../img/baseball.jpg" class="smallpx" alt="icon for baseball"/></div>
+        </li>
+        <li class="slide-visible">
+          <div id="slide6"><img src="../img/tandt.jpg" class="smallpx" alt="icon for track and field"/></div>
+        </li>
+      </ul>
+    </div>
+    <!-- text -->
+    <div class="container" data-aos="fade-up">
     <div class="header-text">
-        <h1> Athletics</h1>
-        <h5>Joyland School of Technology Athletic Program focuses to collaborate with parents and staff to ensure our students continue to have a sports experience that can be rewarding for everyone. The coaches and staff are readily awaiting to provide our students with the best sports experience to help develop their skills, academic success, and continued athletic development.
-        </h5>
-</div>
-<div class="teamtext-container col-sm-12 col-lg-12">
-    <h2> Teams </h2>
-    <p> The program offers 4 Junior Varsity/Varsity teams over the course of 2 seasons which includes Volleyball, Girls Cross Country, Boys Cross Country, Girls Basketball, Boys Basketball, and Softball, Girls Track and Field, and Boys Track and Field.</p>
+      <h1>Athletics</h1>
+      <h5>
+        Joyland School of Technology Athletic Program focuses to collaborate
+        with parents and staff to ensure our students continue to have a sports
+        experience that can be rewarding for everyone. The coaches and staff are
+        readily awaiting to provide our students with the best sports experience
+        to help develop their skills, academic success, and continued athletic
+        development.
+      </h5>
     </div>
-
-    <div class="sports-container col-sm-12 col-lg-12">
-        <div class="item">
-            <img src="../img/ball.svg" alt="Basketball">
+    <div class="teamtext-container col-sm-12 col-lg-12">
+      <h2>Teams</h2>
+      <p>
+        The program offers 4 Junior Varsity/Varsity teams over the course of 2
+        seasons which includes Volleyball, Girls Cross Country, Boys Cross
+        Country, Girls Basketball, Boys Basketball, and Softball, Girls Track
+        and Field, and Boys Track and Field.
+      </p>
+    </div>
+</div>
+    <div class="bglight py-5 " data-aos="fade-up">
+      <div class="container sports-container pt-3">
+        <div class="row text-center">
+          <div class="col-4">
+            <img src="../img/basket-ball.png" alt="Basketball" width="40%" />
             <p>Basketball</p>
-        </div>
-        <div class="item">
-            <img src="../img/volleyball.png" alt="Volleyball">
-            <p>Volleyball</p>
-        </div>
-        <div class="item">
-            <img src="../img/pawn.png" alt="Chess">
+            <div class="row">
+              <div class="col-12">
+                <img src="../img/volleyball.png" alt="Volleyball" width="40%" />
+              </div>
+              <p>Volleyball</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="../img/pawn.png" alt="Chess" width="40%" />
             <p>Chess</p>
-        </div>
-        <div class="item">
-            <img src="../img/soccer-ball.png" alt="Soccer">
-            <p>Soccer</p>
-        </div>
-        <div class="item">
-            <img src="../img/cap.png" alt="Baseball">
+            <div class="row">
+              <div class="col--12">
+                <img src="../img/soccer-ball.png" alt="Soccer" width="40%" />
+                <p>Soccer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="../img/cap.png" alt="Baseball" width="40%" />
             <p>Baseball</p>
+            <div class="row">
+              <div class="col-12">
+                <img
+                  src="../img/race-track.png"
+                  alt="Track and Field"
+                  width="40%"
+                />
+                <p>Track and Field</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="item">
-            <img src="../img/race-track.png" alt="Track and Field">
-            <p>Track and Field</p>
-        </div>
+      </div>
     </div>
-
-    <div class="schedule-container col-sm-12 col-lg-12">
-
-        <h2> View The Lates Schedules</h2>
-        <p> View our guide to see this year's athletic coaches, roster, schedules, and game stats.</p>
+    <div class="container my-5" data-aos="fade-up">
+      <div class="schedule-container col-sm-12 col-lg-12 r">
+        <h2>View The Lates Schedules</h2>
+        <p>
+          View our guide to see this year's athletic coaches, roster, schedules,
+          and game stats.
+        </p>
         <button class="view-button">View</button>
-        
+      </div>
+
+      <div class="game-day mt-5">
+        <h2>Game day Details</h2>
+        <p>
+          We are proud to invite families, students, faculty, staff, recruiters,
+          and fans alike to 'The Chamber', Sci High's Gymnatorium for athletic
+          events. In the sections below are details of what to expect for
+          gameday's at Sci High.
+        </p>
+      </div>
+      <div class="faq-container" >
+        <div class="faq active" data-aos="fade-right">
+          <h3 class="faq-title">
+            What time do the doors open for gameday events at Sci High?
+          </h3>
+  
+          <p class="faq-text">
+            Doors typically open 30 minutes before the start time of the event.
+          </p>
+  
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-
-
-        <div class="game-day">
-            <h2>Game day Details</h2>
-            <p>We are proud to invite families, students, faculty, staff, recruiters, and fans alike to 'The Chamber', Sci High's Gymnatorium for athletic events. In the sections below are details of what to expect for gameday's at Sci High.</p>
-        
-        </div>
-
-        
-<div class="updates-container col-sm-12 col-lg-12">
- 
-    <a class="btn" data-bs-toggle="collapse" href="#collapseEx" role="button"> + Entrance </a>
-    <div class="collapse" id="collapseEx">
-    <div class="card card-body">
-    
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
-    
-    </div>
-    </div> 
-    
-    <a class="btn" data-bs-toggle="collapse" href="#collapseEx2" role="button"> + Admission </a>
-    <div class="collapse" id="collapseEx2">
-    <div class="card card-body">
-    
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
-    
-    </div>
-    
-    
-    </div>
-    
-    
-    
-    </div>
-
-    
-<div class="updates-container col-sm-12 col-lg-12">
- 
-    <a class="btn" data-bs-toggle="collapse" href="#collapseEx3" role="button"> + Parking </a>
-    <div class="collapse" id="collapseEx3">
-        <div class="card card-body">
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
-        
+  
+        <div class="faq" data-aos="fade-left">
+          <h3 class="faq-title">
+            Is there a cost for attending Sci High gameday events?
+          </h3>
+          <p class="faq-text">
+            Yes, there is a small admission fee for attending Sci High gameday events. Prices vary depending on the event and can be found on the school's website.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
         </div>
         
-        
+        <div class="faq" data-aos="fade-right">
+          <h3 class="faq-title">
+            Can I bring outside food and drinks to Sci High gameday events?
+          </h3>
+          <p class="faq-text">
+            Outside food and drinks are not allowed inside 'The Chamber'. However, there is a concession stand available with a variety of snacks and drinks for purchase.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-    
-    <a class="btn" data-bs-toggle="collapse" href="#collapseEx4" role="button">  + Consessions </a>
-    <div class="collapse" id="collapseEx4">
-    <div class="card card-body">
-    
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas labore cupiditate perferendis quod blanditiis modi molestiae, itaque dolore dignissimos obcaecati dolor consectetur beatae aspernatur consequuntur, totam, iure saepe odit possimus?
-    
-    </div>
-    
-    
-    </div>
-
-
-
-    
-    
-    
-    </div>
-
-
-
-<br>
-
-
-    <div class="sports-news col-sm-12 col-lg-12">
-<h3> News and Updates</h3>
-
-    <p><a href="#">Cross Country: Michael I. runs to State Competition</a></p>
-    <span style="color:lightcoral
-    ">Jan. 11, 2023</span>
-
-
-	<p><a href="#">Boy's Basketball</a></p>
-    <span style="color:lightcoral
-    ">Jan. 11, 2023</span>
-
-
-    <p><a href="#">Volleyball Schedule</a></p>
-    <span style="color:lightcoral
-    ">Jan. 11, 2023</span>
-
-    <p><a href="#">Girl's Basketball Schedule</a></p>
-    <span style="color:lightcoral
-    ">Jan. 11, 2023</span>
-    <p><a href="#">Boy's Basketball Schedule</a></p>
-    <span style="color:lightcoral
-    ">Jan. 11, 2023</span>
-
-
-    </div>
-
-
+        
+        <div class="faq" data-aos="fade-left">
+          <h3 class="faq-title">
+            Are there designated seating areas for students and families?
+          </h3>
+          <p class="faq-text">
+            Yes, there are designated seating areas for students and families. Students typically sit in the student section, while families can sit in the general seating area.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="faq" data-aos="fade-right">
+          <h3 class="faq-title">
+            Is parking available on-site for Sci High gameday events?
+          </h3>
+          <p class="faq-text">
+            Parking is available on a first-come, first-served basis in the school's parking lot. It is recommended to arrive early to ensure a parking spot. Additionally, street parking may be available in the surrounding neighborhood.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
 
 </div>
-
-
-
-
-
-
-
+</div>
+<div class="bglight" data-aos="fade-up">
+<div class=" container mb-5">
+  <div class="sports-news col-sm-12 col-lg-12">
+    <div class="border-bottom border-dark">
+        <h3>News and Updates</h3>
+      </div>
+   
+      <div class="border-bottom border-dark">
+    <p>
+      <a href="#">Cross Country: Michael I. runs to State Competition</a>
+    </p>
+    
+    <span >Jan. 1, 2023</span>
+</div>
+<div class="border-bottom border-dark" data-aos="fade-up">
+    <p><a href="#">Boy's Basketball Schedule</a></p>
+    <span >Jan. 11, 2023</span>
+</div>
+<div class="border-bottom border-dark" data-aos="fade-up">
+    <p><a href="#">Boy's Basketball</a></p>
+    <span >Jan. 23, 2023</span>
+</div>
+<div class="border-bottom border-dark" data-aos="fade-up">
+    <p><a href="#">Volleyball Schedule</a></p>
+    <span >Feb. 14, 2023</span>
+</div>
+<div class="border-bottom border-dark" data-aos="fade-up"> 
+    <p><a href="#">Girl's Basketball Schedule</a></p>
+    <span >Feb. 20, 2023</span>
+  </div>
+  
+      </div>
     </div>
-
-
-
-
-
-</body>
+    <!-- Footer -->
+    
+    <footer class="footer-cont d-none d-sm-flex">
+      <div class="upper-cont">
+        <div class="left-section text-center">
+          <img src="../img/logo.png" alt="The logo of the page" />
+          <p class="schoolName">Joyland School Inc.</p>
+          <p class="quote" style="margin-top: 0px">
+            “Whether you're a current student, parent, or prospective applicant,
+            we hope you find our website informative and engaging.”
+          </p>
+        </div>
+        <div class="middle-section-1">
+          <div class="upper-link">
+            <p class="header-link">Quick Links</p>
+            <a href="../index.html">Home</a>
+            <a href="../About-Us.html">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="lower-link">
+            <p class="header-link">Extracurricular Activites</p>
+            <a href="#">Clubs and Organizations</a>
+            <a href="../HTML/Sports.html">Athletics</a>
+            <a href="#">Fine Arts</a>
+            <a href="#">Community Service</a>
+          </div>
+        </div>
+        <div class="middle-section-2">
+          <div class="upper-link">
+            <p class="header-link">Academics</p>
+            <a href="#">Course Catalog</a>
+            <a href="#">Departments</a>
+            <a href="../HTML/Admission.html">Admission</a>
+          </div>
+          <div class="lower-link">
+            <p class="header-link">Resources</p>
+            <a href="#">Library</a>
+            <a href="#">Technology</a>
+            <a href="#">Counseling</a>
+            <a href="#">Health Services</a>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="upperPart">
+            <p class="header-link">Newsletter</p>
+            <div class="newsletterForm">
+              <p class="form-heading">
+                Stay up to date with the latest news and events from our school!
+                Subscribe to our newsletter
+              </p>
+              <div class="form-lower">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <button id="emailSubscribe">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="middlePart">
+            <p class="header-link">Follow us on social media</p>
+            <div class="icon-links">
+              <a href="#"
+                ><img src="../img/youtube.svg" alt="Youtube Icon"
+              /></a>
+              <a href="#"
+                ><img src="../img/facebook.svg" alt="Facebook Icon"
+              /></a>
+              <a href="#"
+                ><img src="../img/linkedin.svg" alt="LinkedIn Icon"
+              /></a>
+              <a href="#"
+                ><img src="../img/instagram.svg" alt="Instagram Icon"
+              /></a>
+              <a href="#"
+                ><img src="../img/twitter.svg" alt="Twitter Icon"
+              /></a>
+            </div>
+          </div>
+          <div class="lower-part">
+            <p class="header-link">Where to reach us?</p>
+            <div style="margin-top: 13px">
+              <p class="location-link links">
+                <img src="../img/location.svg" alt="Location Icon" />
+                <span>123 Main St., Anytown, USA 12345</span>
+              </p>
+              <p class="phone-link links">
+                <img src="../img/telephone.svg" alt="Telephone Icon" />
+                <span>+63 934-887-9902</span>
+              </p>
+              <p class="email-link links text-center">
+                <img src="../img/email.svg" alt="Email Icon" />
+                <span>joylandschool.inc@edu.com.ph</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-cont">
+        Copyright information: © 2023 JoylandSchool. All rights reserved.
+      </div>
+    </footer>
+    <!-- MOBILE FOOTER -->
+    <footer class="mobile-home-footer d-flex d-sm-none">
+      <div class="upperPart">
+        <img src="../img/logo.png" alt="logo of the page" />
+        <p class="header">Joyland School Inc.</p>
+        <p class="tagline">
+          “Whether you're a current student, parent, or prospective applicant,
+          we hope you find our website informative and engaging.”
+        </p>
+      </div>
+      <div class="quick-links-mobile">
+        <p class="header-link">Quick Links</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Home</a>
+          <a class="links" href="#">About Us</a>
+          <a class="links" href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="academic">
+        <p class="header-link">Academics</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Curriculum</a>
+          <a class="links" href="#">Departments</a>
+          <a class="links" href="#">Course Catalog</a>
+        </div>
+      </div>
+      <div class="extracurricularActivities">
+        <p class="header-link">Extracurricular Activities</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Clubs and Organizations</a>
+          <a class="links" href="#">Athletics</a>
+          <a class="links" href="#">Fine Arts</a>
+          <a class="links" href="#">Community Service</a>
+        </div>
+      </div>
+      <div class="resources">
+        <p class="header-link">Resources</p>
+        <div class="lower-part-link">
+          <a class="links" href="#">Library</a>
+          <a class="links" href="#">Technology</a>
+          <a class="links" href="#">Counseling</a>
+          <a class="links" href="#">Health Services</a>
+        </div>
+      </div>
+      <div class="newsletter-mobile">
+        <p class="newsletter-header">Newsletter</p>
+        <div class="newsletterForm">
+          <p class="form-header">
+            Stay up to date with the latest news and events from our school!
+            Subscribe to our newsletter
+          </p>
+          <input
+            type="email"
+            id="emailNewsletterMobile"
+            placeholder="Email Address"
+            style="color: white"
+          />
+          <button id="subscribeBtnMobile">Subscribe</button>
+        </div>
+      </div>
+      <div class="socialMedialinksMobile">
+        <p class="socialHeader">Follow us on Social Media</p>
+        <div class="footer-links">
+          <a href="#">
+            <img src="../img/twitter.svg" alt="twitter icon" />
+          </a>
+          <a href="#">
+            <img src="../img/instagram.svg" alt="instagram icon" />
+          </a>
+          <a href="#">
+            <img src="../img/facebook.svg" alt="facebook icon" />
+          </a>
+          <a href="#">
+            <img src="../img/linkedin.svg" alt="linkedin" />
+          </a>
+          <a href="#">
+            <img src="../img/youtube.svg" alt="youtube-icon" />
+          </a>
+        </div>
+      </div>
+      <div class="wrtuMobile">
+        <p class="wrtuHeader">Where to reach us?</p>
+        <div class="wrtuCont">
+          <div class="wrtuLinks">
+            <img
+              class="location-icon"
+              src="../img/location.svg"
+              alt="location icon"
+            />
+            <img
+              class="telephone-icon"
+              src="../img/telephone.svg"
+              alt="phone icon"
+            />
+            <img class="email-icon" src="../img/email.svg" alt="email icon" />
+            <p class="location">123 Main St., Anytown, USA 12345</p>
+            <p class="number">(+63)934-887-9902</p>
+            <p class="emailwtru">info@yourschool.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="lower-part">
+        Copyright information: © 2023 [Your Company Name]. All rights reserved.
+      </div>
+    </footer>
+    <script src="../JS/sports.js">
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
 </html>
