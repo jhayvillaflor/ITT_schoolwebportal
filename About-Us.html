@@ -57,8 +57,8 @@
           <a class="home" href="index.html">home</a>
           <a class="about-us" href="About-Us.html">about-us</a>
           <a class="blogs" href="HTML/News.html">News</a>
-          <a href="HTML/Teacher-Login.html"
-            ><button id="loginBtn">
+          <p>
+            <button id="loginBtn" class="loginBtns">
               <!-- svgToggle -->
               <svg
                 width="20"
@@ -74,14 +74,12 @@
               </svg>
 
               login
-            </button></a
-          >
+            </button>
+          </p>
         </div>
         <div class="lower-nav">
           <a href="HTML/Admission.html">Admission</a>
-          <a class="active" href="package-lock.json"
-            >Extracurricular Activities</a
-          >
+          <a href="HTML/Admission.html">Extracurricular Activities</a>
           <a href="#">Resources</a>
         </div>
       </div>
@@ -98,7 +96,7 @@
       <nav class="nav-bar-mobile">
         <div class="upper-nav">
           <a href="index.html">Home</a>
-          <a href="About-Us.html">About Us</a>
+          <a class="active" href="About-Us.html">About Us</a>
           <a href="#">Contact Us</a>
         </div>
         <div class="lower-nav">
@@ -131,7 +129,7 @@
             </div>
           </div>
           <p class="lgin">
-            <a href="HTML/Teacher-Login.html" id="loginBtn">
+            <a class="loginBtns">
               <!-- svgToggle -->
               <svg
                 width="20"
@@ -864,6 +862,7 @@
         Copyright information: © 2023 [Your Company Name]. All rights reserved.
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -871,5 +870,6 @@
     <script src="JS/script.js"></script>
     <script src="JS/about-pic-animation.js"></script>
     <script src="JS/scripts-for-new-animation.js"></script>
+    <script src="JS/login.js"></script>
   </body>
 </html>
