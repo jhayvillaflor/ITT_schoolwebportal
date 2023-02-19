@@ -27,6 +27,11 @@
     />
     <!-- Animate On Scroll Library CDN-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -445,6 +450,7 @@
         </div>
       </nav>
     </header>
+    <!-- home mobile contents -->
     <div class="mobile-home-cont-1 d-sm-none">
       <div class="upper-cont">
         <p class="tagline">Welcome to Joyland School Inc.!</p>
@@ -589,8 +595,40 @@
         />
       </svg>
     </div>
-    <div class="mobile-home-cont-3 d-sm-none">JS CONTENT</div>
-    <div class="mobile-home-cont-4 d-sm-none">JS CONTENT</div>
+    <div class="mobile-home-cont-3 d-sm-none">
+      <p class="hero">Upcoming Events</p>
+      <div class="swiffy-slider">
+        <ul class="slider-container">
+          <li>
+            <img src="img/formobile1.jpg" />
+          </li>
+          <li>
+            <img src="img/formobile2.jpg" />
+          </li>
+          <li>
+            <img src="img/formobile3.jpg" />
+          </li>
+        </ul>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+
+        <div class="slider-indicators">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-home-cont-4 d-sm-none">
+      <div class="upper-content">
+        <p class="hero">Explore Our Diverse Course Offerings</p>
+        <p class="tagline">Discover Your Passion and Reach Your Potential</p>
+      </div>
+      <div class="button-cont">
+        <button class="exploreNowBtn">EXPLORE NOW</button>
+      </div>
+    </div>
     <footer class="mobile-home-footer d-flex d-sm-none">
       <div class="upperPart">
         <img src="img/logo.png" alt="logo of the page" />
@@ -696,6 +734,11 @@
       </div>
     </footer>
     <!-- PUT ALL THE JS HERE AND SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -713,7 +756,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="JS/script.js"></script>
-    <!-- mobile function -->
+    <!-- mobile nav function -->
     <script>
       const hamburgerSection = document.querySelector(".hamburger-section");
       const navBarMobile = document.querySelector(".nav-bar-mobile");
@@ -722,6 +765,7 @@
         navBarMobile.classList.toggle("show");
       });
     </script>
+    <!-- content 4 function -->
     <script>
       const computerSci = document.querySelector(".computer-sci");
       const education = document.querySelector(".education");
