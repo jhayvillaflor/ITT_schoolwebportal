@@ -178,13 +178,25 @@ navLinks.forEach((link) => {
     link.classList.add("active");
   });
 });
+window.onbeforeunload = function () {
+  localStorage.removeItem("username");
+  localStorage.removeItem("password");
+};
 
 const logoutButton = document.querySelector("#logout-button");
+
+// Clear the username and password from local storage when the window is unloaded
+window.addEventListener("beforeunload", function () {
+  localStorage.removeItem("username");
+  localStorage.removeItem("password");
+});
+
 logoutButton.addEventListener("click", (e) => {
   e.preventDefault();
   // Remove the username and password from local storage
   localStorage.removeItem("username");
   localStorage.removeItem("password");
+
   // Redirect the user to index.html
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });

@@ -411,6 +411,7 @@ body {
   background-color: #21305b;
 }
 
+
 @media screen and (max-width: 500px) {
   .navigation-cont {
     display: none;

@@ -1928,8 +1928,8 @@ nav.active .icon .line2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1951,8 +1951,8 @@ nav.active .icon .line2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .mobile-home-cont-3 .swiffy-slider .slider-container {
   width: 100%;
@@ -1966,7 +1966,7 @@ nav.active .icon .line2 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .mobile-home-cont-4 {
@@ -1975,14 +1975,13 @@ nav.active .icon .line2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< Updated upstream
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin-top: 5em;
   padding: 0 10px;
 }
@@ -1992,11 +1991,11 @@ nav.active .icon .line2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: left;
 }
 .mobile-home-cont-4 .upper-content .hero {
@@ -2017,15 +2016,25 @@ nav.active .icon .line2 {
   color: #ffffff;
   border-radius: 8px;
   -webkit-box-shadow: 2px 2px 1px #51f4fe;
-          box-shadow: 2px 2px 1px #51f4fe;
+  box-shadow: 2px 2px 1px #51f4fe;
 }
-=======
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 5em;
+.lgin {
+  font-size: 20px;
+  color: #abc0ff;
+  font-weight: bold;
 }
->>>>>>> Stashed changes
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

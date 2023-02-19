@@ -5,14 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
-    <!-- jquey CDN -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/logo.png" />
     <!-- bootstrap CDN css-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -20,198 +14,401 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- homemade css-->
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate On Scroll Library CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- homemade css -->
+    <link href="../CSS/news.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/sports.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/styles.css" rel="stylesheet" type="text/css" />
   </head>
-  <style>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navigation-cont d-none d-sm-flex">
+      <div class="left-section mb-3">
+        <img src="../img/logo.png" alt="The logo of the page" />
+      </div>
+      <div class="right-section-navlinks">
+        <div class="upper-nav">
+          <a class="home" href="../index.html">home</a>
+          <a class="about-us" href="../About-Us.html">about-us</a>
+          <a class="blogs" href="../HTML/News.html">News</a>
+          <button id="loginBtn">
+            <!-- svgToggle -->
+            <svg
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.12034 2.78315C8.94813 1.82061 9.98397 1.13592 11.1185 0.801381C12.2531 0.466843 13.4442 0.494868 14.5662 0.882496C15.6882 1.27012 16.6994 2.00297 17.4931 3.00367C18.2867 4.00436 18.8334 5.23577 19.0753 6.56788C19.3172 7.89999 19.2454 9.28337 18.8675 10.572C18.4896 11.8606 17.8197 13.0066 16.9283 13.889C16.037 14.7713 14.9573 15.3574 13.8034 15.5853C12.6495 15.8131 11.4641 15.6743 10.3723 15.1834L10.1033 15.0555L10.0833 15.0508H9.47334V16.8864C9.47349 17.2464 9.35883 17.5937 9.15157 17.861C8.94431 18.1283 8.65917 18.2967 8.35134 18.3335L8.22334 18.3405H6.64534V20.1761C6.64549 20.5361 6.53083 20.8833 6.32357 21.1507C6.11631 21.418 5.83118 21.5864 5.52334 21.6232L5.39534 21.6302H1.41234C1.16352 21.6302 0.923452 21.5234 0.738173 21.3302C0.552893 21.137 0.435443 20.871 0.408344 20.5833L0.402344 20.4553V17.4192C0.402344 17.0158 0.522491 16.6249 0.742344 16.313L0.842344 16.185L6.34234 9.78594L6.35234 9.7429C6.35543 9.71145 6.35408 9.67962 6.34834 9.64868C6.13193 8.42311 6.18055 7.15421 6.48984 5.95589C6.79912 4.75758 7.35939 3.66737 8.12034 2.78315ZM12.3623 6.07284C12.2231 6.23491 12.1126 6.42732 12.0373 6.63905C11.9619 6.85079 11.9232 7.07772 11.9232 7.30688C11.9233 7.53604 11.9621 7.76294 12.0375 7.97464C12.113 8.18634 12.2235 8.37868 12.3628 8.54068C12.5022 8.70268 12.6676 8.83117 12.8496 8.91882C13.0316 9.00647 13.2267 9.05155 13.4237 9.0515C13.6207 9.05144 13.8158 9.00625 13.9977 8.91851C14.1797 8.83076 14.3451 8.70218 14.4843 8.5401C14.7575 8.21086 14.9085 7.77001 14.9049 7.31251C14.9013 6.85501 14.7433 6.41746 14.4651 6.09409C14.1868 5.77073 13.8105 5.58743 13.4172 5.58367C13.024 5.57991 12.6451 5.75483 12.3623 6.07284Z"
+                fill="#293864"
+              />
+            </svg>
 
-/* Default styles for news card */
-.news-card {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
+            login
+          </button>
+        </div>
+        <div class="lower-nav">
+          <a href="../HTML/Admission.html">Admission</a>
+          <a class="active" href="../package-lock.json"
+            >Extracurricular Activities</a
+          >
+          <a href="#">Resources</a>
+        </div>
+      </div>
+    </header>
+    <!-- home page mobile view -->
+    <header class="nav-cont d-flex d-sm-none">
+        <div class="left-section">
+          <img src="../img/logo.png" alt="logo of the page" class="p-1"/>
+        </div>
+        <div class="hamburger-section" id="toggle">
+          <div class="lines line1"></div>
+          <div class="lines line2"></div>
 
-
-  body {
-  background-color:#2e466e;
-  font-family: "Montserrat", sans-serif;
-  color: aliceblue;
-}
-
-
-
-
-.news-card img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-.news-card-content {
-  padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 767px) {
-  .news-card {
-    flex-direction: column;
-  }
+        </div>
+        <nav class="nav-bar-mobile">
+          <div class="upper-nav">
+            <a href="../index.html">Home</a>
+            <a href="../About-Us.html">About Us</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="lower-nav">
+            <div class="academic">
+              <p class="academicHeader toggle-link">Academics</p>
+              <div>
+                <a href="#">Curriculum</a>
+                <a href="#">Departments</a>
+                <a href="#">Course Catalog</a>
+              </div>
+            </div>
+            <div class="extracurricularActivities">
+              <p class="extracurricularActivitiesHeader toggle-link">
+                Extracurricular Activities
+              </p>
+              <div>
+                <a href="#">Clubs and Organizations</a>
+                <a href="../HTML/Sports.html">Athletics</a>
+                <a href="#">Fine Arts</a>
+                <a href="#">Community Service</a>
+              </div>
+            </div>
+            <div class="resources">
+              <p class="resourcesHeader toggle-link">Resources</p>
+              <div>
+                <a href="#">Library</a>
+                <a href="#">Technology</a>
+                <a href="#">Counseling</a>
+                <a href="#">Health Services</a>
+              </div>
+            </div>
+          </div>
+          
+        </nav>
+      </header>
+    <!-- news -->
+    <div class="header-text bglight" data-aos="fade-up">
+      <h1 style="text-align: center;"> JOYLAND NEWS</h1>
+      <h5 style="text-align: center;">Stories of people, research and innovation in and out of the Campus</h5>
+    </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="news-card col-sm-12 col-lg-12" data-aos="fade-up">
+            
+            <div class="news-card-content">
+              <h2 class="news-card-title">Alumni Homecoming 2023</h2>
+              <div>
+                <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+                <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+                <button class="see-more more">See More</button>
+                <button class="see-less more">See Less</button>
+              </div>
+            </div>
+            <img src="../img/Alumni.jpg" alt="Sample Image">
+          </div>
+          <div class="news-card col-sm-12 col-lg-12">
+            <img src="../img/projectai.jpg" alt="Sample Image">
+            <div class="news-card-content">
+              <h2 class="news-card-title">AI Project</h2>
+              <div>
+                <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+                <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+                <button class="see-more more">See More</button>
+                <button class="see-less more">See Less</button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="news-card col-sm-12 col-lg-12">
+            
+            <div class="news-card-content">
+              <h2 class="news-card-title">Joyland School Champion</h2>
+              <div>
+                <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+                <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+                <button class="see-more more">See More</button>
+                <button class="see-less more">See Less</button>
+              </div>
+            </div>
+            <img src="../img/Champ.jpg" alt="Sample Image">
+          </div>
   
-  .news-card img {
-    max-width: 100%;
-
-  }
-}
-
-
-.header-text {
-
-font-family: 'Times New Roman', Times, serif;
-
-}
-
-.header-text h1 {
-
-font-family: 'Times New Roman', Times, serif;
-font-size: 50px;
-font-weight: 800;
-color: #abc0ff;
-}
-
-.header-text h2 {
-
-font-family: 'Times New Roman', Times, serif;
-font-size: 20px;
-font-weight: 600;
-}
-
-.news-card h2 {
-
-font-size: 40px;
-font-weight: 550;
-color: #abc0ff;
-
-}
-
-.news-card p {
-
-  font-size: 15px;
-  font-weight: 400;
-}
-
-
-
-.see-less {
-
-  display:none;
-
-}
-
-button {
-  background: none!important;
-  border: none;
-  padding: 0!important;
-  /*optional*/
-  font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
-  color: #069;
-  text-decoration: underline;
-  cursor: pointer;
-}
-  </style>
-
-<script>
-  $(document).ready(function(){
-    $(".content").hide();
-    $(".see-more").click(function(){
-      $(this).parent().find(".content").show(200);
-      $(this).hide();
-      $(this).parent().find(".see-less").show();
-    });
-    $(".see-less").click(function(){
-      $(this).parent().find(".content").hide(200);
-      $(this).hide();
-      $(this).parent().find(".see-more").show();
-    });
-  });
-</script>
-
-
-<body>
+          <div class="news-card col-sm-12 col-lg-12">
+            <img src="../img/bright.jpg" alt="Sample Image">
+            <div class="news-card-content">
+              <h2 class="news-card-title">Bright Future Ahead</h2>
+              <div>
+                <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
+                <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
+                <button class="see-more more">See More</button>
+                <button class="see-less more">See Less</button>
+              </div>
+            </div>
+            
+          </div>
+          
+    
   
-  <div class="header-text">
-    <h1 style="text-align: center;"> JOYLAND NEWS</h1>
-    <h5 style="text-align: center;">Stories of people, research and innovation in and out of the Campus</h5>
+        </div>
+      </div>
+    
+    
+  
+  
   </div>
-    <div class="container">
-      <div class="row">
-        <div class="news-card col-sm-12 col-lg-12">
-          <img src="img/Alumni.jpg" alt="Sample Image">
-          <div class="news-card-content">
-            <h2 class="news-card-title">Alumni Homecoming 2023</h2>
-            <div>
-              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
-              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
-              <button class="see-more">See More</button>
-              <button class="see-less">See Less</button>
+  </div>
+  <!-- Footer -->
+    
+  <footer class="footer-cont d-none d-sm-flex">
+    <div class="upper-cont">
+      <div class="left-section text-center">
+        <img src="../img/logo.png" alt="The logo of the page" />
+        <p class="schoolName">Joyland School Inc.</p>
+        <p class="quote" style="margin-top: 0px">
+          “Whether you're a current student, parent, or prospective applicant,
+          we hope you find our website informative and engaging.”
+        </p>
+      </div>
+      <div class="middle-section-1">
+        <div class="upper-link">
+          <p class="header-link">Quick Links</p>
+          <a href="../index.html">Home</a>
+          <a href="../About-Us.html">About Us</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="lower-link">
+          <p class="header-link">Extracurricular Activites</p>
+          <a href="#">Clubs and Organizations</a>
+          <a href="../HTML/Sports.html">Athletics</a>
+          <a href="#">Fine Arts</a>
+          <a href="#">Community Service</a>
+        </div>
+      </div>
+      <div class="middle-section-2">
+        <div class="upper-link">
+          <p class="header-link">Academics</p>
+          <a href="#">Course Catalog</a>
+          <a href="#">Departments</a>
+          <a href="../HTML/Admission.html">Admission</a>
+        </div>
+        <div class="lower-link">
+          <p class="header-link">Resources</p>
+          <a href="#">Library</a>
+          <a href="#">Technology</a>
+          <a href="#">Counseling</a>
+          <a href="#">Health Services</a>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="upperPart">
+          <p class="header-link">Newsletter</p>
+          <div class="newsletterForm">
+            <p class="form-heading">
+              Stay up to date with the latest news and events from our school!
+              Subscribe to our newsletter
+            </p>
+            <div class="form-lower">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <button id="emailSubscribe">Subscribe</button>
             </div>
           </div>
-          
         </div>
-        <div class="news-card col-sm-12 col-lg-12">
-          <img src="img/projectai.jpg" alt="Sample Image">
-          <div class="news-card-content">
-            <h2 class="news-card-title">AI Project</h2>
-            <div>
-              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
-              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
-              <button class="see-more">See More</button>
-              <button class="see-less">See Less</button>
-            </div>
+        <div class="middlePart">
+          <p class="header-link">Follow us on social media</p>
+          <div class="icon-links">
+            <a href="#"
+              ><img src="../img/youtube.svg" alt="Youtube Icon"
+            /></a>
+            <a href="#"
+              ><img src="../img/facebook.svg" alt="Facebook Icon"
+            /></a>
+            <a href="#"
+              ><img src="../img/linkedin.svg" alt="LinkedIn Icon"
+            /></a>
+            <a href="#"
+              ><img src="../img/instagram.svg" alt="Instagram Icon"
+            /></a>
+            <a href="#"
+              ><img src="../img/twitter.svg" alt="Twitter Icon"
+            /></a>
           </div>
-          
         </div>
-        <div class="news-card col-sm-12 col-lg-12">
-          <img src="img/Champ.jpg" alt="Sample Image">
-          <div class="news-card-content">
-            <h2 class="news-card-title">Joyland School Champion</h2>
-            <div>
-              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
-              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
-              <button class="see-more">See More</button>
-              <button class="see-less">See Less</button>
-            </div>
+        <div class="lower-part">
+          <p class="header-link">Where to reach us?</p>
+          <div style="margin-top: 13px">
+            <p class="location-link links">
+              <img src="../img/location.svg" alt="Location Icon" />
+              <span>123 Main St., Anytown, USA 12345</span>
+            </p>
+            <p class="phone-link links">
+              <img src="../img/telephone.svg" alt="Telephone Icon" />
+              <span>+63 934-887-9902</span>
+            </p>
+            <p class="email-link links text-center">
+              <img src="../img/email.svg" alt="Email Icon" />
+              <span>joylandschool.inc@edu.com.ph</span>
+            </p>
           </div>
-          
         </div>
-
-        <div class="news-card col-sm-12 col-lg-12">
-          <img src="img/bright.jpg" alt="Sample Image">
-          <div class="news-card-content">
-            <h2 class="news-card-title">Bright Future Ahead</h2>
-            <div>
-              <p>A new technology school has opened its doors in the heart of downtown, with a mission to prepare students for the jobs of the future. The school, called FutureTech Academy, is a state-of-the-art facility designed to teach students the latest in emerging technologies and equip them with the skills they need to thrive in the 21st century workforce.</p>
-              <p class="content">FutureTech Academy is the brainchild of a group of tech industry veterans who saw a gap in the market for a school that could give students hands-on experience with cutting-edge technology. The school boasts a wide range of courses in fields such as artificial intelligence, robotics, data science, and cybersecurity, among others.</p>
-              <button class="see-more">See More</button>
-              <button class="see-less">See Less</button>
-            </div>
-          </div>
-          
-        </div>
-        
-  
-
       </div>
     </div>
-  
-  
-
-
-</div>
-</div>
-
-  
+    <div class="lower-cont">
+      Copyright information: © 2023 JoylandSchool. All rights reserved.
+    </div>
+  </footer>
+  <!-- MOBILE FOOTER -->
+  <footer class="mobile-home-footer d-flex d-sm-none">
+    <div class="upperPart">
+      <img src="../img/logo.png" alt="logo of the page" />
+      <p class="header">Joyland School Inc.</p>
+      <p class="tagline">
+        “Whether you're a current student, parent, or prospective applicant,
+        we hope you find our website informative and engaging.”
+      </p>
+    </div>
+    <div class="quick-links-mobile">
+      <p class="header-link">Quick Links</p>
+      <div class="lower-part-link">
+        <a class="links" href="#">Home</a>
+        <a class="links" href="#">About Us</a>
+        <a class="links" href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="academic">
+      <p class="header-link">Academics</p>
+      <div class="lower-part-link">
+        <a class="links" href="#">Curriculum</a>
+        <a class="links" href="#">Departments</a>
+        <a class="links" href="#">Course Catalog</a>
+      </div>
+    </div>
+    <div class="extracurricularActivities">
+      <p class="header-link">Extracurricular Activities</p>
+      <div class="lower-part-link">
+        <a class="links" href="#">Clubs and Organizations</a>
+        <a class="links" href="#">Athletics</a>
+        <a class="links" href="#">Fine Arts</a>
+        <a class="links" href="#">Community Service</a>
+      </div>
+    </div>
+    <div class="resources">
+      <p class="header-link">Resources</p>
+      <div class="lower-part-link">
+        <a class="links" href="#">Library</a>
+        <a class="links" href="#">Technology</a>
+        <a class="links" href="#">Counseling</a>
+        <a class="links" href="#">Health Services</a>
+      </div>
+    </div>
+    <div class="newsletter-mobile">
+      <p class="newsletter-header">Newsletter</p>
+      <div class="newsletterForm">
+        <p class="form-header">
+          Stay up to date with the latest news and events from our school!
+          Subscribe to our newsletter
+        </p>
+        <input
+          type="email"
+          id="emailNewsletterMobile"
+          placeholder="Email Address"
+          style="color: white"
+        />
+        <button id="subscribeBtnMobile">Subscribe</button>
+      </div>
+    </div>
+    <div class="socialMedialinksMobile">
+      <p class="socialHeader">Follow us on Social Media</p>
+      <div class="footer-links">
+        <a href="#">
+          <img src="../img/twitter.svg" alt="twitter icon" />
+        </a>
+        <a href="#">
+          <img src="../img/instagram.svg" alt="instagram icon" />
+        </a>
+        <a href="#">
+          <img src="../img/facebook.svg" alt="facebook icon" />
+        </a>
+        <a href="#">
+          <img src="../img/linkedin.svg" alt="linkedin" />
+        </a>
+        <a href="#">
+          <img src="../img/youtube.svg" alt="youtube-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="wrtuMobile">
+      <p class="wrtuHeader">Where to reach us?</p>
+      <div class="wrtuCont">
+        <div class="wrtuLinks">
+          <img
+            class="location-icon"
+            src="../img/location.svg"
+            alt="location icon"
+          />
+          <img
+            class="telephone-icon"
+            src="../img/telephone.svg"
+            alt="phone icon"
+          />
+          <img class="email-icon" src="../img/email.svg" alt="email icon" />
+          <p class="location">123 Main St., Anytown, USA 12345</p>
+          <p class="number">(+63)934-887-9902</p>
+          <p class="emailwtru">info@yourschool.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="lower-part">
+      Copyright information: © 2023 [Your Company Name]. All rights reserved.
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../JS/news.js"></script>
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
-
-

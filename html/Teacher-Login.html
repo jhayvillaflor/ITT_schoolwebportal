@@ -27,6 +27,8 @@
     />
     <!-- Animate On Scroll Library CDN-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- swal -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <!-- body -->
@@ -563,9 +565,21 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-   
+    <script>
+      // Check if the user is logged in
+      if (!localStorage.getItem("loggedIn")) {
+        Swal.fire({
+          icon: "warning",
+          title: "Please log in first",
+          showConfirmButton: false,
+          timer: 2000, // Automatically close the alert after 2 seconds
+        }).then(() => {
+          window.location.href = "login ../index.html";
+        });
+      }
+    </script>
     
-
+    
     
   </body>
 </html>

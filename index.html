@@ -16,8 +16,9 @@
     />
     <!-- homemade css-->
     <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
-    <!-- Font-awesome -->
+    <link href="CSS/sports.css" rel="stylesheet" type="text/css" />
 
+    <!-- Font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -68,6 +69,53 @@
           <a href="#">Resources</a>
         </div>
       </div>
+    </header>
+    <!-- navbar mobile view -->
+    <header class="nav-cont d-flex d-sm-none">
+      <div class="left-section">
+        <img src="img/logo.png" alt="logo of the page" class="p-1" />
+      </div>
+      <div class="hamburger-section" id="toggle">
+        <div class="lines line1"></div>
+        <div class="lines line2"></div>
+      </div>
+      <nav class="nav-bar-mobile">
+        <div class="upper-nav">
+          <a href="index.html">Home</a>
+          <a href="About-Us.html">About Us</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="lower-nav">
+          <div class="academic">
+            <p class="academicHeader toggle-link">Academics</p>
+            <div>
+              <a href="#">Curriculum</a>
+              <a href="#">Departments</a>
+              <a href="#">Course Catalog</a>
+            </div>
+          </div>
+          <div class="extracurricularActivities">
+            <p class="extracurricularActivitiesHeader toggle-link">
+              Extracurricular Activities
+            </p>
+            <div>
+              <a href="#">Clubs and Organizations</a>
+              <a href="HTML/Sports.html">Athletics</a>
+              <a href="#">Fine Arts</a>
+              <a href="#">Community Service</a>
+            </div>
+          </div>
+          <div class="resources">
+            <p class="resourcesHeader toggle-link">Resources</p>
+            <div>
+              <a href="#">Library</a>
+              <a href="#">Technology</a>
+              <a href="#">Counseling</a>
+              <a href="#">Health Services</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Content of Home page -->
     <!-- content 1 -->
@@ -408,48 +456,7 @@
         Copyright information: © 2023 JoylandSchool. All rights reserved.
       </div>
     </footer>
-    <!-- home page mobile view -->
-    <header class="nav-cont d-flex d-sm-none">
-      <div class="left-section">
-        <img src="img/logo.png" alt="logo of the page" />
-      </div>
-      <div class="hamburger-section">
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-      </div>
-      <nav class="nav-bar-mobile">
-        <div class="upper-nav">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Contact Us</a>
-        </div>
-        <div class="lower-nav">
-          <div class="academic">
-            <p class="academicHeader">Academics</p>
-            <a href="#">Curriculum</a>
-            <a href="#">Departments</a>
-            <a href="#">Course Catalog</a>
-          </div>
-          <div class="extracurricularActivities">
-            <p class="extracurricularActivitiesHeader">
-              Extracurricular Activities
-            </p>
-            <a href="#">Clubs and Organizations</a>
-            <a href="#">Athletics</a>
-            <a href="#">Fine Arts</a>
-            <a href="#">Community Service</a>
-          </div>
-          <div class="resources">
-            <p class="resourcesHeader">Resources</p>
-            <a href="#">Library</a>
-            <a href="#">Technology</a>
-            <a href="#">Counseling</a>
-            <a href="#">Health Services</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+
     <!-- home mobile contents -->
     <div class="mobile-home-cont-1 d-sm-none">
       <div class="upper-cont">
@@ -755,51 +762,8 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/script.js"></script>
-    <!-- mobile nav function -->
-    <script>
-      const hamburgerSection = document.querySelector(".hamburger-section");
-      const navBarMobile = document.querySelector(".nav-bar-mobile");
-
-      hamburgerSection.addEventListener("click", function () {
-        navBarMobile.classList.toggle("show");
-      });
-    </script>
-    <!-- content 4 function -->
-    <script>
-      const computerSci = document.querySelector(".computer-sci");
-      const education = document.querySelector(".education");
-      const humanities = document.querySelector(".humanAndSocialSci");
-      const scienceMath = document.querySelector(".Sci-Math");
-      const pictureCont = document.querySelector(".picture-cont");
-
-      computerSci.addEventListener("click", () => {
-        pictureCont.style.backgroundImage = "url('img/kursoone.svg')";
-        setActive(computerSci);
-      });
-
-      education.addEventListener("click", () => {
-        pictureCont.style.backgroundImage = "url('img/kursofour.svg')";
-        setActive(education);
-      });
-
-      humanities.addEventListener("click", () => {
-        pictureCont.style.backgroundImage = "url('img/kursotwo.svg')";
-        setActive(humanities);
-      });
-
-      scienceMath.addEventListener("click", () => {
-        pictureCont.style.backgroundImage = "url('img/kursothree.svg')";
-        setActive(scienceMath);
-      });
-
-      function setActive(selected) {
-        const allCategories = [computerSci, education, humanities, scienceMath];
-        allCategories.forEach((category) => {
-          category.classList.remove("active");
-        });
-        selected.classList.add("active");
-      }
-    </script>
+    <script src="JS/login.js"></script>
   </body>
 </html>

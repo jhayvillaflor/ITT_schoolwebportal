@@ -238,6 +238,26 @@ body {
     transform: translateX(0);
   }
 }
+.lgin {
+  font-size: 20px;
+  color: #abc0ff;
+  font-weight: bold;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
 
 .fade-out {
   opacity: 1;

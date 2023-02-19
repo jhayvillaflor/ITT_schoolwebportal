@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* Default styles for news card */
+.news-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #2e466e;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+}
+
+.news-card img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.news-card-content {
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+  .news-card {
+    flex-direction: column;
+  }
+
+  .news-card img {
+    max-width: 100%;
+  }
+}
+
+.header-text {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header-text h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #abc0ff;
+}
+
+.header-text h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.news-card h2 {
+  font-size: 40px;
+  font-weight: 550;
+  color: #abc0ff;
+}
+
+.news-card p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.see-less {
+  display: none;
+}
+
+.more {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* additional on  nav for mobile*/
+.toggle-link::after {
+  content: "▼";
+  margin-left: 5px;
+}
+
+.active .toggle-link::after {
+  content: "▲";
+}
+
+.toggle-link + div > a {
+  display: none;
+}
+
+.active > div > a {
+  display: block;
+}
+
+.active .line1 {
+  transform: rotate(-405deg) translateY(-3px) translatex(-20px);
+}
+
+.active .line2 {
+  transform: rotate(405deg) translateY(3px) translatex(-17px);
+}
