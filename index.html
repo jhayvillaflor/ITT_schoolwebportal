@@ -31,14 +31,14 @@
   <body>
     <!-- Navigation Bar -->
     <header class="navigation-cont d-none d-sm-flex">
-      <div class="left-section">
+      <div class="left-section mb-3">
         <img src="img/logo.png" alt="The logo of the page" />
       </div>
       <div class="right-section-navlinks">
         <div class="upper-nav">
-          <a class="home" href="#">home</a>
-          <a class="about-us" href="#">about-us</a>
-          <a class="blogs" href="#">blogs</a>
+          <a class="home active" href="index.html">home</a>
+          <a class="about-us" href="About-Us.html">about-us</a>
+          <a class="blogs" href="HTML/News.html">News</a>
           <button id="loginBtn">
             <!-- svgToggle -->
             <svg
@@ -58,16 +58,16 @@
           </button>
         </div>
         <div class="lower-nav">
-          <a href="#">ACADEMICS</a>
-          <a href="#">Extracurricular Activities</a>
-          <a href="#">resources</a>
+          <a href="HTML/Admission.html">Admission</a>
+          <a href="HTML/Sports.html">Extracurricular Activities</a>
+          <a href="#">Resources</a>
         </div>
       </div>
     </header>
     <!-- Content of Home page -->
     <!-- content 1 -->
     <section class="home-content-1 d-none d-sm-flex">
-      <div class="left-section">
+      <div class="left-section" data-aos="fade-right">
         <div class="upper-part">
           <p class="tagline">Welcome to Joyland Tech School!</p>
           <p class="hero">Where learning is an adventure</p>
@@ -83,16 +83,16 @@
         </div>
         <button id="readMoreBtn">Read more</button>
       </div>
-      <div class="right-section">
+      <div class="right-section" data-aos="fade-left">
         <!-- svg bg -->
       </div>
     </section>
     <!-- content 2 -->
-    <section class="home-content-2 d-none d-sm-flex">
+    <section class="home-content-2 d-none d-sm-flex" data-aos="flip-up">
       <div class="left-section"></div>
       <div class="right-section">
         <div class="upper-part">
-          <p class="tagline">Keep Up with the Latest at [School Name]!</p>
+          <p class="tagline">Keep Up with the Latest at Joyland School Inc.!</p>
           <p class="hero">Stay Informed and Inspired</p>
           <p class="description">
             At Joyland Tech School, we're always busy creating new programs,
@@ -108,7 +108,7 @@
           </div>
           <div class="iconlinks">
             <a href="#">
-              <img src="/img/youtube.svg" alt="youtube-icon" />
+              <img src="img/youtube.svg" alt="youtube-icon" />
             </a>
             <a href="#">
               <img src="img/facebook.svg" alt="facebook icon" />
@@ -127,7 +127,7 @@
       </div>
     </section>
     <!-- content 3 -->
-    <section class="home-content-3 d-none d-sm-flex">
+    <section class="home-content-3 d-none d-sm-flex" data-aos="zoom-in-down">
       <p class="hero">Our Latest News</p>
       <div class="middle-cont">
         <div class="program-news">
@@ -243,7 +243,7 @@
       <div class="upper-cont">
         <div class="left-section">
           <img src="img/logo.png" alt="The logo of the page" />
-          <p class="schoolName">[SCHOOL NAME]</p>
+          <p class="schoolName">Joyland School Inc.</p>
           <p class="quote">
             “Whether you're a current student, parent, or prospective applicant,
             we hope you find our website informative and engaging.”
@@ -252,14 +252,14 @@
         <div class="middle-section-1">
           <div class="upper-link">
             <p class="header-link">Quick Links</p>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
+            <a href="index.html">Home</a>
+            <a href="About-Us.html">About Us</a>
             <a href="#">Contact Us</a>
           </div>
           <div class="lower-link">
             <p class="header-link">Extracurricular Activites</p>
             <a href="#">Clubs and Organizations</a>
-            <a href="#">Athletics</a>
+            <a href="HTML/Sports.html">Athletics</a>
             <a href="#">Fine Arts</a>
             <a href="#">Community Service</a>
           </div>
@@ -267,9 +267,9 @@
         <div class="middle-section-2">
           <div class="upper-link">
             <p class="header-link">Academics</p>
-            <a href="#">Curriculum</a>
-            <a href="#">Departments</a>
             <a href="#">Course Catalog</a>
+            <a href="#">Departments</a>
+            <a href="HTML/Admission.html">Admission</a>
           </div>
           <div class="lower-link">
             <p class="header-link">Resources</p>
@@ -377,7 +377,7 @@
     </header>
     <div class="mobile-home-cont-1 d-sm-none">
       <div class="upper-cont">
-        <p class="tagline">Welcome to [School Name]!</p>
+        <p class="tagline">Welcome to Joyland School Inc.!</p>
         <p class="hero">Where learning is an adventure</p>
       </div>
       <div class="lower-cont">
@@ -445,7 +445,7 @@
     <div class="mobile-home-cont-2 d-sm-none">
       <div class="upper-cont">
         <p class="hero">Stay Informed and Inspired</p>
-        <p class="tagline">Keep Up with the Latest at [School Name]!</p>
+        <p class="tagline">Keep Up with the Latest at Joyland School Inc.!</p>
       </div>
       <div class="lower-cont">
         <p>Follow us on social media</p>
@@ -524,7 +524,7 @@
     <footer class="mobile-home-footer d-flex d-sm-none">
       <div class="upperPart">
         <img src="img/logo.png" alt="logo of the page" />
-        <p class="header">[SCHOOL NAME]</p>
+        <p class="header">Joyland School Inc.</p>
         <p class="tagline">
           “Whether you're a current student, parent, or prospective applicant,
           we hope you find our website informative and engaging.”
@@ -575,6 +575,7 @@
             type="email"
             id="emailNewsletterMobile"
             placeholder="Email Address"
+            style="color: white"
           />
           <button id="subscribeBtnMobile">Subscribe</button>
         </div>
