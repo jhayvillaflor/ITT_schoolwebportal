@@ -35,3 +35,8 @@ const nav = document.getElementById("nav");
 
 toggle.addEventListener("click", () => toggle.classList.toggle("active"));
 
+const loginBtn = document.querySelector(".loginBtns");
+
+loginBtns.addEventListener("click", () => {
+  navBarMobile.classList.toggle("show");
+});

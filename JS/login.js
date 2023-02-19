@@ -1,4 +1,7 @@
-const loginBtn = document.getElementById("loginBtn");
+const loginBtns = document.getElementsByClassName("loginBtns");
+for (let i = 0; i < loginBtns.length; i++) {
+  loginBtns[i].addEventListener("click", login);
+}
 
 function login() {
   Swal.fire({
