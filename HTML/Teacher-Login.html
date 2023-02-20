@@ -567,14 +567,14 @@
     ></script>
     <script>
       // Check if the user is logged in
-      if (!localStorage.getItem("loggedIn")) {
+      if (!localStorage.getItem("username")) {
         Swal.fire({
           icon: "warning",
           title: "Please log in first",
           showConfirmButton: false,
           timer: 2000, // Automatically close the alert after 2 seconds
         }).then(() => {
-          window.location.href = "login ../index.html";
+          window.location.href = "../index.html";
         });
       }
     </script>

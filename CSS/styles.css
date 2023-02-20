@@ -2038,3 +2038,6 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+.active {
+  color: #51f4fe;
+}

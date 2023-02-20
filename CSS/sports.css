@@ -303,3 +303,7 @@ body {
 .active .line2 {
   transform: rotate(405deg) translateY(3px) translatex(-17px);
 }
+
+.active {
+  color: #51f4fe;
+}
